@@ -21,20 +21,20 @@ const Header = () => {
                   <span>Localize sua Loja</span>
                 </div>
               </PopoverTrigger>
-              <PopoverContent className="w-80">
+              <PopoverContent className="w-80 bg-background border border-border shadow-card">
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-lg">Nossas Lojas</h3>
+                  <h3 className="font-semibold text-lg text-foreground">Nossas Lojas</h3>
                   <div className="space-y-3">
-                    <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border rounded-lg hover:bg-accent transition-colors">
-                      <h4 className="font-semibold">Auditus Belém</h4>
+                    <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg hover:bg-accent hover:border-primary/20 transition-all duration-200">
+                      <h4 className="font-semibold text-foreground">Auditus Belém</h4>
                       <p className="text-sm text-muted-foreground">Pará</p>
                     </a>
-                    <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border rounded-lg hover:bg-accent transition-colors">
-                      <h4 className="font-semibold">Auditus Fortaleza</h4>
+                    <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg hover:bg-accent hover:border-primary/20 transition-all duration-200">
+                      <h4 className="font-semibold text-foreground">Auditus Fortaleza</h4>
                       <p className="text-sm text-muted-foreground">Ceará</p>
                     </a>
-                    <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border rounded-lg hover:bg-accent transition-colors">
-                      <h4 className="font-semibold">Auditus São Luís</h4>
+                    <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg hover:bg-accent hover:border-primary/20 transition-all duration-200">
+                      <h4 className="font-semibold text-foreground">Auditus São Luís</h4>
                       <p className="text-sm text-muted-foreground">Maranhão</p>
                     </a>
                   </div>
