@@ -59,7 +59,7 @@ const Brands = () => {
               </div>
 
               <div className="bg-gradient-card rounded-xl p-4">
-                <h4 className="font-semibold text-primary mb-2">Modelos Disponíveis:</h4>
+                <h4 className="font-semibold text-primary mb-2">• ReSound ENZO - Nosso aparelho auditivo para perda auditiva severa a profunda.</h4>
                 <div className="text-sm text-muted-foreground space-y-1">
                   <div>• ReSound NEXIA - Som individualizado</div>
                   <div>• ReSound OMNIA - Audição em 360°</div>
