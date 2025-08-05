@@ -22,7 +22,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Sobre o <span className="text-secondary">AUDITUS</span>
+            Sobre a <span className="text-secondary">AUDITUS</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Nossa história é construída sobre 25 anos de experiência e um compromisso inabalável com a saúde auditiva e o bem-estar de nossos clientes. Desde a nossa fundação, dedicamos-nos a transformar vidas, reconectando pessoas ao mundo dos sons com clareza, conforto e confiança.</p>
         </div>
