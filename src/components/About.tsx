@@ -88,7 +88,7 @@ const About = () => {
             <div className="text-muted-foreground">Anos no Mercado</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">5000+</div>
+            <div className="text-4xl font-bold text-primary mb-2">7000+</div>
             <div className="text-muted-foreground">Vidas Transformadas</div>
           </div>
           <div className="text-center">
