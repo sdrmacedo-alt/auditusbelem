@@ -34,7 +34,7 @@ const Header = () => {
                       <MapPin className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold text-gray-700">Nossas Lojas</h4>
                     </div>
-                    <div className="space-y-2 ml-8 hover:bg-gray-100 p-2 rounded transition-colors duration-200">
+                    <div className="space-y-2 ml-8">
                       <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:bg-gray-50 hover:border-primary/20 transition-all duration-200">
                         <div className="font-medium text-gray-700">Auditus Belém</div>
                         <div className="text-xs text-gray-500">Pará</div>
