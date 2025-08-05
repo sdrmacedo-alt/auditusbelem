@@ -107,7 +107,7 @@ const Header = () => {
         </div>
 
         {/* Mobile menu */}
-        {isMenuOpen && <div className="lg:hidden mt-2 py-2 border-t border-border bg-white rounded-lg shadow-lg mx-6 max-w-xs">
+        {isMenuOpen && <div className="absolute top-full left-4 z-50 mt-2 py-2 bg-white rounded-lg shadow-lg border border-gray-200 w-64 animate-fade-in">
             <div className="flex flex-col space-y-1">
               <a href="#home" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Início</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
