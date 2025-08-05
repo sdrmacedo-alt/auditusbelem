@@ -21,7 +21,7 @@ const Header = () => {
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-gray-800">Informações de Contato</h3>
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg hover:border-red-500 transition-colors duration-200">
+                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg hover:border-2 hover:border-red-500 transition-all duration-200">
                     <Phone className="w-5 h-5 text-primary" />
                     <div>
                       <h4 className="font-semibold text-gray-700">Telefone</h4>
@@ -29,7 +29,7 @@ const Header = () => {
                     </div>
                   </div>
                   
-                  <div className="border border-border rounded-lg p-3">
+                  <div className="border border-border rounded-lg p-3 hover:border-2 hover:border-red-500 transition-all duration-200">
                     <div className="flex items-center space-x-3 mb-3">
                       <MapPin className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold text-gray-700">Nossas Lojas</h4>
@@ -50,7 +50,7 @@ const Header = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg">
+                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg hover:border-2 hover:border-red-500 transition-all duration-200">
                     <Clock className="w-5 h-5 text-primary" />
                     <div>
                       <h4 className="font-semibold text-gray-700">Horário de Funcionamento</h4>
