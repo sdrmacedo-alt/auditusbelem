@@ -107,21 +107,21 @@ const Header = () => {
         </div>
 
         {/* Mobile menu */}
-        {isMenuOpen && <div className="lg:hidden mt-4 py-4 border-t border-border bg-white rounded-lg shadow-lg mx-4">
+        {isMenuOpen && <div className="lg:hidden mt-2 py-2 border-t border-border bg-white rounded-lg shadow-lg mx-6 max-w-xs">
             <div className="flex flex-col space-y-1">
-              <a href="#home" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Início</a>
-              <div className="w-full h-px bg-gray-200 my-1"></div>
-              <a href="#sobre" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Sobre</a>
-              <div className="w-full h-px bg-gray-200 my-1"></div>
-              <a href="#aparelhos" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Aparelhos</a>
-              <div className="w-full h-px bg-gray-200 my-1"></div>
-              <a href="#marcas" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Marcas</a>
-              <div className="w-full h-px bg-gray-200 my-1"></div>
-              <a href="#servicos" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Serviços</a>
-              <div className="w-full h-px bg-gray-200 my-1"></div>
-              <a href="#contato" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Contato</a>
-              <div className="w-full h-2 bg-gradient-to-r from-gray-100 to-gray-200 my-2"></div>
-              <Button className="btn-premium text-primary-foreground mt-2 mx-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+              <a href="#home" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Início</a>
+              <div className="w-full h-px bg-gray-200 my-0.5"></div>
+              <a href="#sobre" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Sobre</a>
+              <div className="w-full h-px bg-gray-200 my-0.5"></div>
+              <a href="#aparelhos" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Aparelhos</a>
+              <div className="w-full h-px bg-gray-200 my-0.5"></div>
+              <a href="#marcas" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Marcas</a>
+              <div className="w-full h-px bg-gray-200 my-0.5"></div>
+              <a href="#servicos" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Serviços</a>
+              <div className="w-full h-px bg-gray-200 my-0.5"></div>
+              <a href="#contato" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Contato</a>
+              <div className="w-full h-1 bg-gradient-to-r from-gray-100 to-gray-200 my-1"></div>
+              <Button className="btn-premium text-primary-foreground mt-1 mx-3 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-sm py-2">
                 Agende Sua Consulta
               </Button>
             </div>
