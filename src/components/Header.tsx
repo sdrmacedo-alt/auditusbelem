@@ -25,10 +25,10 @@ const Header = () => {
                 <div className="space-y-4">
                   <h3 className="font-semibold text-lg">Nossas Lojas</h3>
                   <div className="space-y-3">
-                    <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
+                    <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border rounded-lg hover:bg-accent transition-colors">
                       <h4 className="font-semibold">Auditus Belém</h4>
                       <p className="text-sm text-muted-foreground">Pará</p>
-                    </div>
+                    </a>
                     <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
                       <h4 className="font-semibold">Auditus Fortaleza</h4>
                       <p className="text-sm text-muted-foreground">Ceará</p>
