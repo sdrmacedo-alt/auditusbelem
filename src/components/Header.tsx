@@ -1,14 +1,10 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, MapPin, Clock } from 'lucide-react';
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       {/* Top bar with contact info */}
       <div className="bg-primary text-primary-foreground py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
@@ -33,16 +29,12 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-4 bg-red-600">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" 
-              alt="AUDITUS" 
-              className="h-12 w-auto"
-            />
-            <div className="text-xl font-bold text-primary">AUDITUS</div>
+            <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-12 w-auto" />
+            
           </div>
 
           {/* Desktop menu */}
@@ -63,17 +55,13 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <button
-            onClick={toggleMenu}
-            className="lg:hidden p-2 text-foreground"
-          >
+          <button onClick={toggleMenu} className="lg:hidden p-2 text-foreground">
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 border-t border-border">
+        {isMenuOpen && <div className="lg:hidden mt-4 py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               <a href="#home" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Início</a>
               <a href="#sobre" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Sobre</a>
@@ -85,11 +73,8 @@ const Header = () => {
                 Agende Sua Consulta
               </Button>
             </div>
-          </div>
-        )}
+          </div>}
       </nav>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
