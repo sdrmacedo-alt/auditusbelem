@@ -103,7 +103,10 @@ const Services = () => {
                   <Phone className="mr-2 w-5 h-5" />
                   Ligar Agora: (91) 3242-3546
                 </Button>
-                <Button className="btn-premium-secondary group">
+                <Button 
+                  className="btn-premium-secondary group"
+                  onClick={() => window.open('https://wa.me/5591981214819', '_blank')}
+                >
                   Agendar Online
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
