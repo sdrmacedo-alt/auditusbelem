@@ -43,7 +43,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" 
               alt="AUDITUS" 
-              className="h-16 lg:h-20 w-auto drop-shadow-lg" 
+              className="h-24 lg:h-32 w-auto drop-shadow-lg" 
             />
             <h1 className="text-2xl lg:text-3xl font-bold text-primary mt-2 tracking-wider heading-premium">
               AUDITUS
