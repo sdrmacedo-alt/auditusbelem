@@ -13,7 +13,7 @@ const Header = () => {
           <Popover>
             <PopoverTrigger asChild>
               <button className="flex items-center space-x-2 p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors">
-                <MoreHorizontal className="w-5 h-5" />
+                <MapPin className="w-5 h-5" />
                 <span className="text-sm font-medium">Nossas Lojas</span>
               </button>
             </PopoverTrigger>
