@@ -1,10 +1,8 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Star, Shield, Headphones } from 'lucide-react';
-
 const Brands = () => {
-  return (
-    <section id="marcas" className="py-20 bg-background">
+  return <section id="marcas" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
@@ -31,9 +29,7 @@ const Brands = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />)}
                 </div>
               </div>
 
@@ -65,10 +61,10 @@ const Brands = () => {
               <div className="bg-gradient-card rounded-xl p-4">
                 <h4 className="font-semibold text-primary mb-2">Modelos Disponíveis:</h4>
                 <div className="text-sm text-muted-foreground space-y-1">
-                  <div>• ReSound ONE - Som individualizado</div>
+                  <div>• ReSound NEXIA - Som individualizado</div>
                   <div>• ReSound OMNIA - Audição em 360°</div>
-                  <div>• ReSound QUATTRO - Conectividade total</div>
-                  <div>• ReSound LiNX - Tecnologia inteligente</div>
+                  <div>• ReSound ENZO - Conectividade total</div>
+                  <div>• ReSound KEY - Tecnologia inteligente</div>
                 </div>
               </div>
 
@@ -93,9 +89,7 @@ const Brands = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />)}
                 </div>
               </div>
 
@@ -162,8 +156,6 @@ const Brands = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Brands;
