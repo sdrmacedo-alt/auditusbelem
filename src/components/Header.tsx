@@ -21,7 +21,7 @@ const Header = () => {
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-gray-800">Informações de Contato</h3>
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg hover:bg-red-50 hover:border-red-300 transition-colors duration-200">
+                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg hover:border-red-500 transition-colors duration-200">
                     <Phone className="w-5 h-5 text-primary" />
                     <div>
                       <h4 className="font-semibold text-gray-700">Telefone</h4>
