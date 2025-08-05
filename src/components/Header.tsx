@@ -15,7 +15,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="w-4 h-4" />
-              <span>São Paulo, SP</span>
+              <span>Localize sua Loja</span>
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="w-4 h-4" />
@@ -40,11 +40,7 @@ const Header = () => {
 
           {/* Centered Logo */}
           <div className="flex flex-col items-center justify-center mx-auto">
-            <img 
-              src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" 
-              alt="AUDITUS" 
-              className="h-32 lg:h-40 w-auto drop-shadow-lg" 
-            />
+            <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-32 lg:h-40 w-auto drop-shadow-lg" />
           </div>
 
           {/* Right menu and CTA Button - Desktop */}
