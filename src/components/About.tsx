@@ -4,7 +4,7 @@ const About = () => {
   const features = [{
     icon: Award,
     title: "Excelência",
-    description: "Mais de 15 anos oferecendo soluções auditivas premium com tecnologia de ponta."
+    description: "Mais de 25 anos oferecendo soluções auditivas premium com tecnologia de ponta."
   }, {
     icon: Heart,
     title: "Cuidado Personalizado",
@@ -84,7 +84,7 @@ const About = () => {
         {/* Stats section */}
         <div className="grid md:grid-cols-4 gap-8 pt-16 border-t border-border">
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">15+</div>
+            <div className="text-4xl font-bold text-primary mb-2">25+</div>
             <div className="text-muted-foreground">Anos no Mercado</div>
           </div>
           <div className="text-center">
