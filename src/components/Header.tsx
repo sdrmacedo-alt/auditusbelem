@@ -50,7 +50,7 @@ const Header = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg hover:border-2 hover:border-red-500 transition-all duration-200">
+                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg">
                     <Clock className="w-5 h-5 text-primary" />
                     <div>
                       <h4 className="font-semibold text-gray-700">Horário de Funcionamento</h4>
