@@ -25,7 +25,7 @@ const Header = () => {
                     <Phone className="w-5 h-5 text-primary" />
                     <div>
                       <h4 className="font-semibold text-gray-700">Telefone</h4>
-                      <p className="text-sm text-gray-600">(11) 9999-9999</p>
+                      <p className="text-sm text-gray-600">(91) 99349-2104</p>
                     </div>
                   </div>
                   
