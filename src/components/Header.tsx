@@ -29,7 +29,7 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="container mx-auto px-4 py-2 bg-secondary">
+      <nav className="container mx-auto px-4 py-1 bg-secondary">
         <div className="flex justify-between items-center lg:grid lg:grid-cols-3">
           {/* Left menu - Desktop only */}
           <div className="hidden lg:flex items-center space-x-6">
