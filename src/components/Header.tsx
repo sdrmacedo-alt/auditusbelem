@@ -58,10 +58,10 @@ const Header = () => {
                     </div>
                   </div>
 
-                  <div className="p-3 border border-border rounded-lg bg-gray-50">
+                  <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg bg-gray-50 hover:bg-green-50 hover:border-green-300 transition-colors duration-200 cursor-pointer">
                     <div className="font-semibold text-gray-700 text-center">Teste Auditivo Gratuito</div>
                     <p className="text-xs text-gray-500 text-center mt-1">Agende já sua consulta</p>
-                  </div>
+                  </a>
                 </div>
               </div>
             </PopoverContent>
