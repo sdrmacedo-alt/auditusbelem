@@ -39,7 +39,7 @@ const Header = () => {
           </div>
 
           {/* Centered Logo */}
-          <div className="flex flex-col items-center justify-center lg:col-start-2">
+          <div className="flex flex-col items-center justify-center mx-auto lg:col-start-2 lg:col-end-3 lg:justify-self-center">
             <img 
               src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" 
               alt="AUDITUS" 
