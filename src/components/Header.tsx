@@ -30,16 +30,16 @@ const Header = () => {
 
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-1 bg-secondary">
-        <div className="flex justify-between items-center lg:grid lg:grid-cols-3">
+        <div className="flex justify-between items-center">
           {/* Left menu - Desktop only */}
-          <div className="hidden lg:flex items-center space-x-6">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">Início</a>
-            <a href="#sobre" className="text-foreground hover:text-primary transition-colors">Sobre</a>
-            <a href="#aparelhos" className="text-foreground hover:text-primary transition-colors">Aparelhos</a>
+          <div className="hidden lg:flex items-center space-x-8">
+            <a href="#home" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Início</a>
+            <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Sobre</a>
+            <a href="#aparelhos" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Aparelhos</a>
           </div>
 
           {/* Centered Logo */}
-          <div className="flex flex-col items-center justify-center mx-auto lg:col-start-2 lg:col-end-3 lg:justify-self-center">
+          <div className="flex flex-col items-center justify-center mx-auto">
             <img 
               src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" 
               alt="AUDITUS" 
@@ -47,16 +47,14 @@ const Header = () => {
             />
           </div>
 
-          {/* Right menu - Desktop only */}
-          <div className="hidden lg:flex items-center justify-end space-x-6">
-            <a href="#marcas" className="text-foreground hover:text-primary transition-colors">Marcas</a>
-            <a href="#servicos" className="text-foreground hover:text-primary transition-colors">Serviços</a>
-            <a href="#contato" className="text-foreground hover:text-primary transition-colors">Contato</a>
-          </div>
-
-          {/* CTA Button - Desktop */}
-          <div className="hidden lg:block lg:col-start-3 lg:justify-self-end">
-            <Button className="btn-premium text-primary-foreground">
+          {/* Right menu and CTA Button - Desktop */}
+          <div className="hidden lg:flex items-center space-x-6">
+            <div className="flex items-center space-x-8 mr-6">
+              <a href="#marcas" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Marcas</a>
+              <a href="#servicos" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Serviços</a>
+              <a href="#contato" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Contato</a>
+            </div>
+            <Button className="btn-premium text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
               Agende Sua Consulta
             </Button>
           </div>
