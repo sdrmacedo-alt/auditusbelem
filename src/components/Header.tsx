@@ -81,7 +81,7 @@ const Header = () => {
           {/* Left menu - Desktop only */}
           <div className="hidden lg:flex items-center space-x-8">
             <a href="#home" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Início</a>
-            <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Sobre</a>
+            <a href="#sobre-auditus" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Sobre</a>
             <a href="https://www.resound.com/pt-br/hearing-aids/bluetooth-hearing-aids" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Aparelhos</a>
           </div>
 
@@ -111,7 +111,7 @@ const Header = () => {
             <div className="flex flex-col space-y-1">
               <a href="#home" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Início</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
-              <a href="#sobre" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Sobre</a>
+              <a href="#sobre-auditus" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Sobre</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
               <a href="https://www.resound.com/pt-br/hearing-aids/bluetooth-hearing-aids" target="_blank" rel="noopener noreferrer" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Aparelhos</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
