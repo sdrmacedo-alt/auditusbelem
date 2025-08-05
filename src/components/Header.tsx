@@ -104,14 +104,14 @@ const Header = () => {
         </div>
 
         {/* Mobile menu */}
-        {isMenuOpen && <div className="lg:hidden mt-4 py-4 border-t border-border">
+        {isMenuOpen && <div className="lg:hidden mt-4 py-4 border-t border-border bg-white">
             <div className="flex flex-col space-y-4">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Início</a>
-              <a href="#sobre" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Sobre</a>
-              <a href="#aparelhos" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Aparelhos</a>
-              <a href="#marcas" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Marcas</a>
-              <a href="#servicos" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Serviços</a>
-              <a href="#contato" className="text-foreground hover:text-primary transition-colors" onClick={toggleMenu}>Contato</a>
+              <a href="#home" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Início</a>
+              <a href="#sobre" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Sobre</a>
+              <a href="#aparelhos" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Aparelhos</a>
+              <a href="#marcas" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Marcas</a>
+              <a href="#servicos" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Serviços</a>
+              <a href="#contato" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Contato</a>
               <Button className="btn-premium text-primary-foreground mt-4">
                 Agende Sua Consulta
               </Button>
