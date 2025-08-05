@@ -28,12 +28,42 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
 					light: 'hsl(var(--primary-light))',
-					lighter: 'hsl(var(--primary-lighter))'
+					lighter: 'hsl(var(--primary-lighter))',
+					zinc: {
+						50: 'hsl(var(--primary-zinc-50))',
+						100: 'hsl(var(--primary-zinc-100))',
+						200: 'hsl(var(--primary-zinc-200))',
+						300: 'hsl(var(--primary-zinc-300))',
+						400: 'hsl(var(--primary-zinc-400))',
+						500: 'hsl(var(--primary-zinc-500))',
+						600: 'hsl(var(--primary-zinc-600))'
+					}
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))',
-					light: 'hsl(var(--secondary-light))'
+					light: 'hsl(var(--secondary-light))',
+					zinc: {
+						50: 'hsl(var(--secondary-zinc-50))',
+						100: 'hsl(var(--secondary-zinc-100))',
+						200: 'hsl(var(--secondary-zinc-200))',
+						300: 'hsl(var(--secondary-zinc-300))',
+						400: 'hsl(var(--secondary-zinc-400))',
+						500: 'hsl(var(--secondary-zinc-500))',
+						600: 'hsl(var(--secondary-zinc-600))'
+					}
+				},
+				zinc: {
+					50: 'hsl(var(--zinc-50))',
+					100: 'hsl(var(--zinc-100))',
+					200: 'hsl(var(--zinc-200))',
+					300: 'hsl(var(--zinc-300))',
+					400: 'hsl(var(--zinc-400))',
+					500: 'hsl(var(--zinc-500))',
+					600: 'hsl(var(--zinc-600))',
+					700: 'hsl(var(--zinc-700))',
+					800: 'hsl(var(--zinc-800))',
+					900: 'hsl(var(--zinc-900))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',

@@ -51,6 +51,36 @@ Based on Widex architecture with sophisticated color palette
     --vivid-red: 0 100% 50%;
     --vivid-red-transparent: 0 100% 50% / 0.2;
 
+    /* Primary Zinc variations - sophisticated blue tones */
+    --primary-zinc-50: 215 15% 95%;
+    --primary-zinc-100: 215 12% 88%;
+    --primary-zinc-200: 215 10% 75%;
+    --primary-zinc-300: 215 8% 60%;
+    --primary-zinc-400: 215 6% 45%;
+    --primary-zinc-500: 215 4% 30%;
+    --primary-zinc-600: 215 3% 20%;
+
+    /* Secondary Zinc variations - muted red tones */
+    --secondary-zinc-50: 0 15% 95%;
+    --secondary-zinc-100: 0 12% 88%;
+    --secondary-zinc-200: 0 10% 75%;
+    --secondary-zinc-300: 0 8% 60%;
+    --secondary-zinc-400: 0 6% 45%;
+    --secondary-zinc-500: 0 4% 30%;
+    --secondary-zinc-600: 0 3% 20%;
+
+    /* Neutral Zinc scale - pure grayscale */
+    --zinc-50: 0 0% 98%;
+    --zinc-100: 0 0% 94%;
+    --zinc-200: 0 0% 87%;
+    --zinc-300: 0 0% 71%;
+    --zinc-400: 0 0% 52%;
+    --zinc-500: 0 0% 39%;
+    --zinc-600: 0 0% 28%;
+    --zinc-700: 0 0% 17%;
+    --zinc-800: 0 0% 10%;
+    --zinc-900: 0 0% 6%;
+
     /* Border and input */
     --border: 220 15% 88%;
     --input: 220 15% 92%;
@@ -124,6 +154,36 @@ Based on Widex architecture with sophisticated color palette
 
     --warning: 45 95% 60%;
     --warning-foreground: 220 25% 8%;
+
+    /* Primary Zinc variations - dark mode blue tones */
+    --primary-zinc-50: 215 25% 15%;
+    --primary-zinc-100: 215 22% 22%;
+    --primary-zinc-200: 215 20% 35%;
+    --primary-zinc-300: 215 18% 50%;
+    --primary-zinc-400: 215 16% 65%;
+    --primary-zinc-500: 215 14% 80%;
+    --primary-zinc-600: 215 12% 90%;
+
+    /* Secondary Zinc variations - dark mode red tones */
+    --secondary-zinc-50: 0 25% 15%;
+    --secondary-zinc-100: 0 22% 22%;
+    --secondary-zinc-200: 0 20% 35%;
+    --secondary-zinc-300: 0 18% 50%;
+    --secondary-zinc-400: 0 16% 65%;
+    --secondary-zinc-500: 0 14% 80%;
+    --secondary-zinc-600: 0 12% 90%;
+
+    /* Neutral Zinc scale - dark mode grayscale */
+    --zinc-50: 0 0% 12%;
+    --zinc-100: 0 0% 18%;
+    --zinc-200: 0 0% 25%;
+    --zinc-300: 0 0% 35%;
+    --zinc-400: 0 0% 48%;
+    --zinc-500: 0 0% 61%;
+    --zinc-600: 0 0% 72%;
+    --zinc-700: 0 0% 83%;
+    --zinc-800: 0 0% 90%;
+    --zinc-900: 0 0% 94%;
 
     --border: 220 20% 18%;
     --input: 220 20% 15%;
