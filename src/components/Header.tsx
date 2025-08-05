@@ -72,6 +72,12 @@ const Header = () => {
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-1 bg-secondary">
         <div className="flex justify-between items-center">
+          {/* Mobile menu button - Left side */}
+          <button onClick={toggleMenu} className="lg:hidden p-2 text-white flex items-center space-x-2">
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <span className="text-sm font-medium">Menu</span>
+          </button>
+
           {/* Left menu - Desktop only */}
           <div className="hidden lg:flex items-center space-x-8">
             <a href="#home" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Início</a>
@@ -96,11 +102,8 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <button onClick={toggleMenu} className="lg:hidden p-2 text-white flex items-center space-x-2">
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            <span className="text-sm font-medium">Menu</span>
-          </button>
+          {/* Spacer for mobile to keep logo centered */}
+          <div className="lg:hidden w-20"></div>
         </div>
 
         {/* Mobile menu */}
