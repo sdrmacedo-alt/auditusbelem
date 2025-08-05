@@ -29,21 +29,21 @@ const Header = () => {
                     </div>
                   </div>
                   
-                  <div className="border border-border rounded-lg p-3 hover:border-2 hover:border-red-500 transition-all duration-200">
+                  <div className="border border-border rounded-lg p-3">
                     <div className="flex items-center space-x-3 mb-3">
                       <MapPin className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold text-gray-700">Nossas Lojas</h4>
                     </div>
                     <div className="space-y-2 ml-8">
-                      <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:bg-gray-50 hover:border-primary/20 transition-all duration-200">
+                      <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
                         <div className="font-medium text-gray-700">Auditus Belém</div>
                         <div className="text-xs text-gray-500">Pará</div>
                       </a>
-                      <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:bg-gray-50 hover:border-primary/20 transition-all duration-200">
+                      <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
                         <div className="font-medium text-gray-700">Auditus Fortaleza</div>
                         <div className="text-xs text-gray-500">Ceará</div>
                       </a>
-                      <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:bg-gray-50 hover:border-primary/20 transition-all duration-200">
+                      <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
                         <div className="font-medium text-gray-700">Auditus São Luís</div>
                         <div className="text-xs text-gray-500">Maranhão</div>
                       </a>
