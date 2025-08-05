@@ -60,7 +60,7 @@ const Services = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-primary">{service.title}</h3>
-                    <div className="text-secondary font-semibold">{service.price}</div>
+                    <div className="text-secondary font-semibold">Incluso</div>
                   </div>
                 </div>
 
