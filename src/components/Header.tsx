@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Menu, X, Phone, MapPin, Clock } from 'lucide-react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +14,33 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               <span>(11) 9999-9999</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <MapPin className="w-4 h-4" />
-              <span>Localize sua Loja</span>
-            </div>
+            <Popover>
+              <PopoverTrigger asChild>
+                <div className="flex items-center space-x-2 cursor-pointer hover:text-primary-foreground/80 transition-colors">
+                  <MapPin className="w-4 h-4" />
+                  <span>Localize sua Loja</span>
+                </div>
+              </PopoverTrigger>
+              <PopoverContent className="w-80">
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-lg">Nossas Lojas</h3>
+                  <div className="space-y-3">
+                    <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
+                      <h4 className="font-semibold">Auditus Belém</h4>
+                      <p className="text-sm text-muted-foreground">Pará</p>
+                    </div>
+                    <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
+                      <h4 className="font-semibold">Auditus Fortaleza</h4>
+                      <p className="text-sm text-muted-foreground">Ceará</p>
+                    </div>
+                    <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
+                      <h4 className="font-semibold">Auditus São Luís</h4>
+                      <p className="text-sm text-muted-foreground">Maranhão</p>
+                    </div>
+                  </div>
+                </div>
+              </PopoverContent>
+            </Popover>
             <div className="flex items-center space-x-2">
               <Clock className="w-4 h-4" />
               <span>Seg-Sex: 8h-18h</span>
