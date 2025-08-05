@@ -154,7 +154,10 @@ const Brands = () => {
                 desenvolvimento para oferecer as tecnologias mais avançadas do mercado.
               </p>
               <div className="flex justify-center">
-                <Button className="btn-premium text-primary-foreground">
+                <Button 
+                  className="btn-premium text-primary-foreground"
+                  onClick={() => window.open('https://www.gn.com', '_blank')}
+                >
                   Saiba Mais Sobre o Grupo GN
                 </Button>
               </div>
