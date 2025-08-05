@@ -34,11 +34,11 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button className="btn-premium text-primary-foreground">
+              <Button className="btn-premium text-primary-foreground group">
                 Teste Auditivo Gratuito
-                <ArrowRight className="ml-2 w-5 h-5 hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button className="btn-premium-secondary">
+              <Button className="btn-premium-secondary group">
                 <Play className="mr-2 w-5 h-5" />
                 Conheça Nossa História
               </Button>
