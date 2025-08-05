@@ -28,7 +28,7 @@ const Hero = () => {
                 <br />
                 de Sons
               </h1>
-              <p className="subheading-premium max-w-2xl text-white">
+              <p className="subheading-premium max-w-2xl">
                 No AUDITUS, oferecemos soluções auditivas premium das marcas 
                 GN ReSound e Beltone. Tecnologia avançada para uma audição natural 
                 e uma vida plena.
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button className="btn-premium text-primary-foreground group">
                 Teste Auditivo Gratuito
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform text-zinc-800" />
               </Button>
               <Button className="btn-premium-secondary group">
                 <Play className="mr-2 w-5 h-5" />
