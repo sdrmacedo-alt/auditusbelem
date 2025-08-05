@@ -30,7 +30,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Sobre o <span className="text-secondary">AUDITUS</span>
+            Sobre a <span className="text-secondary">AUDITUS</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Somos especializados em soluções auditivas premium, oferecendo 
