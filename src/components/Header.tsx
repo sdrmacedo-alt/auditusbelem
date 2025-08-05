@@ -21,7 +21,7 @@ const Header = () => {
                   <span>Localize sua Loja</span>
                 </div>
               </PopoverTrigger>
-              <PopoverContent className="w-80 bg-background border border-border shadow-card">
+              <PopoverContent className="w-80 bg-background/95 backdrop-blur-md border border-border shadow-elegant rounded-lg">
                 <div className="space-y-4">
                   <h3 className="font-semibold text-lg text-foreground">Nossas Lojas</h3>
                   <div className="space-y-3">
