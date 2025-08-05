@@ -104,15 +104,21 @@ const Header = () => {
         </div>
 
         {/* Mobile menu */}
-        {isMenuOpen && <div className="lg:hidden mt-4 py-4 border-t border-border bg-white">
-            <div className="flex flex-col space-y-4">
-              <a href="#home" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Início</a>
-              <a href="#sobre" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Sobre</a>
-              <a href="#aparelhos" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Aparelhos</a>
-              <a href="#marcas" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Marcas</a>
-              <a href="#servicos" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Serviços</a>
-              <a href="#contato" className="text-gray-700 font-bold hover:text-primary transition-colors" onClick={toggleMenu}>Contato</a>
-              <Button className="btn-premium text-primary-foreground mt-4">
+        {isMenuOpen && <div className="lg:hidden mt-4 py-4 border-t border-border bg-white rounded-lg shadow-lg mx-4">
+            <div className="flex flex-col space-y-1">
+              <a href="#home" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Início</a>
+              <div className="w-full h-px bg-gray-200 my-1"></div>
+              <a href="#sobre" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Sobre</a>
+              <div className="w-full h-px bg-gray-200 my-1"></div>
+              <a href="#aparelhos" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Aparelhos</a>
+              <div className="w-full h-px bg-gray-200 my-1"></div>
+              <a href="#marcas" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Marcas</a>
+              <div className="w-full h-px bg-gray-200 my-1"></div>
+              <a href="#servicos" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Serviços</a>
+              <div className="w-full h-px bg-gray-200 my-1"></div>
+              <a href="#contato" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-3 px-4 rounded-md border-l-4 border-transparent hover:border-primary" onClick={toggleMenu}>Contato</a>
+              <div className="w-full h-2 bg-gradient-to-r from-gray-100 to-gray-200 my-2"></div>
+              <Button className="btn-premium text-primary-foreground mt-2 mx-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
                 Agende Sua Consulta
               </Button>
             </div>
