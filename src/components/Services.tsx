@@ -6,7 +6,7 @@ const Services = () => {
     icon: Stethoscope,
     title: "Avaliação Auditiva Completa",
     description: "Exame detalhado com equipamentos de última geração para diagnóstico preciso da sua condição auditiva.",
-    features: ["Audiometria tonal", "Logoaudiometria", "Imitanciometria", "Emissões otoacústicas"],
+    features: ["Audiometria tonal", "Logoaudiometria", "Imitanciometria", "Mensuração In Situ"],
     price: "Gratuito"
   }, {
     icon: Headphones,
