@@ -35,17 +35,26 @@ const Header = () => {
                       <h4 className="font-semibold text-gray-700">Nossas Lojas</h4>
                     </div>
                     <div className="space-y-2 ml-8">
-                      <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
-                        <div className="font-medium text-gray-700">Auditus Belém</div>
-                        <div className="text-xs text-gray-500">Pará</div>
+                      <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
+                        <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-8 w-auto" />
+                        <div>
+                          <div className="font-medium text-gray-700">Auditus Belém</div>
+                          <div className="text-xs text-gray-500">Pará</div>
+                        </div>
                       </a>
-                      <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
-                        <div className="font-medium text-gray-700">Auditus Fortaleza</div>
-                        <div className="text-xs text-gray-500">Ceará</div>
+                      <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
+                        <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-8 w-auto" />
+                        <div>
+                          <div className="font-medium text-gray-700">Auditus Fortaleza</div>
+                          <div className="text-xs text-gray-500">Ceará</div>
+                        </div>
                       </a>
-                      <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
-                        <div className="font-medium text-gray-700">Auditus São Luís</div>
-                        <div className="text-xs text-gray-500">Maranhão</div>
+                      <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
+                        <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-8 w-auto" />
+                        <div>
+                          <div className="font-medium text-gray-700">Auditus São Luís</div>
+                          <div className="text-xs text-gray-500">Maranhão</div>
+                        </div>
                       </a>
                     </div>
                   </div>
