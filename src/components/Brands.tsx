@@ -131,7 +131,10 @@ const Brands = () => {
                 </div>
               </div>
 
-              <Button className="btn-premium-secondary w-full group">
+              <Button 
+                className="btn-premium-secondary w-full group"
+                onClick={() => window.open('https://www.beltone.com/pt-br/hearing-aids/beltone-hearing-solutions/beltone-amaze', '_blank')}
+              >
                 Explore os Produtos Beltone
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
