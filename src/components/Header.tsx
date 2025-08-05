@@ -1,54 +1,71 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Menu, X, Phone, MapPin, Clock } from 'lucide-react';
+import { Menu, X, Phone, MapPin, Clock, MoreHorizontal } from 'lucide-react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       {/* Top bar with contact info */}
+      {/* Menu dropdown */}
       <div className="bg-primary text-primary-foreground py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4" />
-              <span>(11) 9999-9999</span>
-            </div>
-            <Popover>
-              <PopoverTrigger asChild>
-                <div className="flex items-center space-x-2 cursor-pointer hover:text-primary-foreground/80 transition-colors">
-                  <MapPin className="w-4 h-4" />
-                  <span>Localize sua Loja</span>
-                </div>
-              </PopoverTrigger>
-              <PopoverContent className="w-80 bg-background/95 backdrop-blur-md border border-border shadow-elegant rounded-lg">
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-lg text-foreground">Nossas Lojas</h3>
-                  <div className="space-y-3">
-                    <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg hover:bg-accent hover:border-primary/20 transition-all duration-200">
-                      <h4 className="font-semibold text-foreground">Auditus Belém</h4>
-                      <p className="text-sm text-muted-foreground">Pará</p>
-                    </a>
-                    <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg hover:bg-accent hover:border-primary/20 transition-all duration-200">
-                      <h4 className="font-semibold text-foreground">Auditus Fortaleza</h4>
-                      <p className="text-sm text-muted-foreground">Ceará</p>
-                    </a>
-                    <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg hover:bg-accent hover:border-primary/20 transition-all duration-200">
-                      <h4 className="font-semibold text-foreground">Auditus São Luís</h4>
-                      <p className="text-sm text-muted-foreground">Maranhão</p>
-                    </a>
+        <div className="container mx-auto flex justify-end">
+          <Popover>
+            <PopoverTrigger asChild>
+              <button className="flex items-center space-x-2 p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors">
+                <MoreHorizontal className="w-5 h-5" />
+                <span className="text-sm font-medium">Menu</span>
+              </button>
+            </PopoverTrigger>
+            <PopoverContent className="w-80 bg-background/95 backdrop-blur-md border border-border shadow-elegant rounded-lg">
+              <div className="space-y-4">
+                <h3 className="font-semibold text-lg text-foreground">Informações de Contato</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg">
+                    <Phone className="w-5 h-5 text-primary" />
+                    <div>
+                      <h4 className="font-semibold text-foreground">Telefone</h4>
+                      <p className="text-sm text-muted-foreground">(11) 9999-9999</p>
+                    </div>
+                  </div>
+                  
+                  <div className="border border-border rounded-lg p-3">
+                    <div className="flex items-center space-x-3 mb-3">
+                      <MapPin className="w-5 h-5 text-primary" />
+                      <h4 className="font-semibold text-foreground">Nossas Lojas</h4>
+                    </div>
+                    <div className="space-y-2 ml-8">
+                      <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:bg-accent hover:border-primary/20 transition-all duration-200">
+                        <div className="font-medium text-foreground">Auditus Belém</div>
+                        <div className="text-xs text-muted-foreground">Pará</div>
+                      </a>
+                      <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:bg-accent hover:border-primary/20 transition-all duration-200">
+                        <div className="font-medium text-foreground">Auditus Fortaleza</div>
+                        <div className="text-xs text-muted-foreground">Ceará</div>
+                      </a>
+                      <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:bg-accent hover:border-primary/20 transition-all duration-200">
+                        <div className="font-medium text-foreground">Auditus São Luís</div>
+                        <div className="text-xs text-muted-foreground">Maranhão</div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-3 p-3 border border-border rounded-lg">
+                    <Clock className="w-5 h-5 text-primary" />
+                    <div>
+                      <h4 className="font-semibold text-foreground">Horário de Funcionamento</h4>
+                      <p className="text-sm text-muted-foreground">Seg-Sex: 8h-18h</p>
+                    </div>
+                  </div>
+
+                  <div className="p-3 border border-border rounded-lg bg-accent/50">
+                    <div className="font-semibold text-foreground text-center">Teste Auditivo Gratuito</div>
+                    <p className="text-xs text-muted-foreground text-center mt-1">Agende já sua consulta</p>
                   </div>
                 </div>
-              </PopoverContent>
-            </Popover>
-            <div className="flex items-center space-x-2">
-              <Clock className="w-4 h-4" />
-              <span>Seg-Sex: 8h-18h</span>
-            </div>
-          </div>
-          <div className="hidden md:flex items-center space-x-4">
-            <span>Teste Auditivo Gratuito</span>
-          </div>
+              </div>
+            </PopoverContent>
+          </Popover>
         </div>
       </div>
 
