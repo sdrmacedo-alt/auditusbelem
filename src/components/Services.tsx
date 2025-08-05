@@ -78,7 +78,10 @@ const Services = () => {
                   </ul>
                 </div>
 
-                <Button className="btn-premium-secondary w-full group mt-auto">
+                <Button 
+                  className="btn-premium-secondary w-full group mt-auto"
+                  onClick={() => window.open('https://wa.me/5591981214819', '_blank')}
+                >
                   Agendar Serviço
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
