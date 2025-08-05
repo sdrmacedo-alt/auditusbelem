@@ -45,9 +45,6 @@ const Header = () => {
               alt="AUDITUS" 
               className="h-24 lg:h-32 w-auto drop-shadow-lg" 
             />
-            <h1 className="text-2xl lg:text-3xl font-bold text-primary mt-2 tracking-wider heading-premium">
-              AUDITUS
-            </h1>
           </div>
 
           {/* Right menu - Desktop only */}
