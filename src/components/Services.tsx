@@ -101,7 +101,7 @@ const Services = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="btn-premium text-primary-foreground group">
                   <Phone className="mr-2 w-5 h-5" />
-                  Ligar Agora: (11) 9999-9999
+                  Ligar Agora: (91) 3242-3546
                 </Button>
                 <Button className="btn-premium-secondary group">
                   Agendar Online
