@@ -54,7 +54,7 @@ const Header = () => {
                     <Clock className="w-5 h-5 text-primary" />
                     <div>
                       <h4 className="font-semibold text-gray-700">Horário de Funcionamento</h4>
-                      <p className="text-sm text-gray-600">Seg-Sex: 8h-18h</p>
+                      <p className="text-sm text-gray-600">Seg-Sex: 8h-18h, Sáb: 9h-12h</p>
                     </div>
                   </div>
 
