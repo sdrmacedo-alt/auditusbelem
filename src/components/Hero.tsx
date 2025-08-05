@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 const Hero = () => {
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-hero"></div>
       
