@@ -14,7 +14,7 @@ const Header = () => {
             <PopoverTrigger asChild>
               <button className="flex items-center space-x-2 p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors">
                 <MoreHorizontal className="w-5 h-5" />
-                <span className="text-sm font-medium">Menu</span>
+                <span className="text-sm font-medium">Nossas Lojas</span>
               </button>
             </PopoverTrigger>
             <PopoverContent className="w-80 bg-white border border-border shadow-elegant rounded-lg">
