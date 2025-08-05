@@ -29,10 +29,10 @@ const Header = () => {
                       <h4 className="font-semibold">Auditus Belém</h4>
                       <p className="text-sm text-muted-foreground">Pará</p>
                     </a>
-                    <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
+                    <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-3 border rounded-lg hover:bg-accent transition-colors">
                       <h4 className="font-semibold">Auditus Fortaleza</h4>
                       <p className="text-sm text-muted-foreground">Ceará</p>
-                    </div>
+                    </a>
                     <div className="p-3 border rounded-lg hover:bg-accent transition-colors">
                       <h4 className="font-semibold">Auditus São Luís</h4>
                       <p className="text-sm text-muted-foreground">Maranhão</p>
