@@ -97,8 +97,9 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <button onClick={toggleMenu} className="lg:hidden p-2 text-foreground">
+          <button onClick={toggleMenu} className="lg:hidden p-2 text-white flex items-center space-x-2">
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <span className="text-sm font-medium">Menu</span>
           </button>
         </div>
 
