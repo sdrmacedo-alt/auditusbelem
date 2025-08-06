@@ -156,9 +156,11 @@ const Header = () => {
                 </PopoverContent>
               </Popover>
               <div className="w-full h-1 bg-gradient-to-r from-gray-100 to-gray-200 my-1"></div>
-              <Button className="btn-premium text-primary-foreground mt-1 mx-3 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-sm py-2">
-                Agende Sua Consulta
-              </Button>
+              <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer">
+                <Button className="btn-premium text-primary-foreground mt-1 mx-3 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-sm py-2 w-full">
+                  Agende Sua Consulta
+                </Button>
+              </a>
             </div>
           </div>}
       </nav>
