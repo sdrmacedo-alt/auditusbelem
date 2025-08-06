@@ -5,43 +5,32 @@ import { useEffect, useState, useCallback } from 'react';
 const Hero = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  const carouselImages = [
-    {
-      src: "/src/assets/mulher-aparelho-auditivo.jpg",
-      alt: "Mulher usando aparelho auditivo ReSound Nexia",
-      title: "ReSound Nexia"
-    },
-    {
-      src: "/src/assets/casal-restaurante-omnia.jpg",
-      alt: "Casal conversando em restaurante com ReSound Omnia",
-      title: "ReSound Omnia"
-    },
-    {
-      src: "/src/assets/aparelhos-pessoas-ao-redor.jpg",
-      alt: "Aparelhos auditivos ReSound Key com fotografias de pessoas ao redor",
-      title: "ReSound Key"
-    },
-    {
-      src: "/src/assets/jovem-festa-enzo-q.jpg",
-      alt: "Jovem numa festa usando aparelho auditivo ReSound Enzo Q",
-      title: "ReSound Enzo Q"
-    }
-  ];
-
+  const carouselImages = [{
+    src: "/src/assets/mulher-aparelho-auditivo.jpg",
+    alt: "Mulher usando aparelho auditivo ReSound Nexia",
+    title: "ReSound Nexia"
+  }, {
+    src: "/src/assets/casal-restaurante-omnia.jpg",
+    alt: "Casal conversando em restaurante com ReSound Omnia",
+    title: "ReSound Omnia"
+  }, {
+    src: "/src/assets/aparelhos-pessoas-ao-redor.jpg",
+    alt: "Aparelhos auditivos ReSound Key com fotografias de pessoas ao redor",
+    title: "ReSound Key"
+  }, {
+    src: "/src/assets/jovem-festa-enzo-q.jpg",
+    alt: "Jovem numa festa usando aparelho auditivo ReSound Enzo Q",
+    title: "ReSound Enzo Q"
+  }];
   useEffect(() => {
     if (!api) return;
-
     const interval = setInterval(() => {
       api.scrollNext();
     }, 3000);
-
     return () => clearInterval(interval);
   }, [api]);
-
   useEffect(() => {
     if (!api) return;
-
     api.on("select", () => {
       setCurrentIndex(api.selectedScrollSnap());
     });
@@ -111,20 +100,14 @@ const Hero = () => {
               <div className="relative bg-card rounded-3xl p-8 shadow-elegant">
                 <Carousel setApi={setApi} className="w-full max-w-lg mx-auto">
                   <CarouselContent>
-                    {carouselImages.map((image, index) => (
-                      <CarouselItem key={index}>
+                    {carouselImages.map((image, index) => <CarouselItem key={index}>
                         <div className="relative overflow-hidden rounded-2xl">
-                          <img 
-                            src={image.src} 
-                            alt={image.alt} 
-                            className="w-full h-80 object-cover animate-fade-in rounded-2xl transition-all duration-500 hover-scale" 
-                          />
+                          <img src={image.src} alt={image.alt} className="w-full h-80 object-cover animate-fade-in rounded-2xl transition-all duration-500 hover-scale" />
                           <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-lg backdrop-blur-sm">
                             <span className="text-sm font-medium">{image.title}</span>
                           </div>
                         </div>
-                      </CarouselItem>
-                    ))}
+                      </CarouselItem>)}
                   </CarouselContent>
                   <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 border-none shadow-lg" />
                   <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 border-none shadow-lg" />
@@ -132,21 +115,11 @@ const Hero = () => {
                 
                 {/* Carousel indicators */}
                 <div className="flex justify-center mt-4 space-x-2">
-                  {carouselImages.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => {
-                        if (api) {
-                          api.scrollTo(index);
-                        }
-                      }}
-                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        index === currentIndex 
-                          ? 'bg-primary w-6' 
-                          : 'bg-gray-300 hover:bg-gray-400'
-                      }`}
-                    />
-                  ))}
+                  {carouselImages.map((_, index) => <button key={index} onClick={() => {
+                  if (api) {
+                    api.scrollTo(index);
+                  }
+                }} className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-primary w-6' : 'bg-gray-300 hover:bg-gray-400'}`} />)}
                 </div>
               </div>
             </div>
@@ -158,7 +131,7 @@ const Hero = () => {
             <div className="absolute bottom-8 -left-4 bg-primary text-primary-foreground px-4 py-2 rounded-xl shadow-card animate-bounce" style={{
             animationDelay: '1s'
           }}>
-              <div className="text-sm font-semibold">GN Hearing</div>
+              <div className="text-sm font-semibold">Tecnologia </div>
             </div>
           </div>
         </div>
