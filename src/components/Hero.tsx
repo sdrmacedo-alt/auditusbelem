@@ -17,8 +17,8 @@ const Hero = () => {
       title: "ReSound Omnia"
     },
     {
-      src: "/src/assets/resound-key-pessoas.jpg",
-      alt: "ReSound Key - Diversidade de pessoas e aparelhos auditivos",
+      src: "/src/assets/aparelhos-pessoas-ao-redor.jpg",
+      alt: "Aparelhos auditivos ReSound Key com fotografias de pessoas ao redor",
       title: "ReSound Key"
     },
     {
