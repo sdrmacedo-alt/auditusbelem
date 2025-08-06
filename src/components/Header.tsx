@@ -100,61 +100,7 @@ const Header = () => {
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
               <a href="#servicos" className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm" onClick={toggleMenu}>Serviços</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <button className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm w-full text-left" onClick={toggleMenu}>
-                    Contato
-                  </button>
-                </PopoverTrigger>
-                <PopoverContent className="w-80 bg-white border border-border shadow-elegant rounded-lg">
-                  <div className="space-y-4">
-                    <h3 className="font-semibold text-lg text-gray-800">Informações de Contato</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3 p-3 border border-border rounded-lg hover:border-2 hover:border-red-500 transition-all duration-200">
-                        <Phone className="w-5 h-5 text-primary" />
-                        <div>
-                          <h4 className="font-semibold text-gray-700">Telefone</h4>
-                          <p className="text-sm text-gray-600">(91) 99349-2104</p>
-                        </div>
-                      </div>
-                      
-                      <div className="border border-border rounded-lg p-3">
-                        <div className="flex items-center space-x-3 mb-3">
-                          <MapPin className="w-5 h-5 text-primary" />
-                          <h4 className="font-semibold text-gray-700">Nossas Lojas</h4>
-                        </div>
-                        <div className="space-y-2 ml-8">
-                          <a href="https://maps.app.goo.gl/2tMj7BMHFyQQfYn87?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
-                            <div className="font-medium text-gray-700">Auditus Belém</div>
-                            <div className="text-xs text-gray-500">Pará</div>
-                          </a>
-                          <a href="https://maps.app.goo.gl/aTQ1GRZF6g2GcAGL7?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
-                            <div className="font-medium text-gray-700">Auditus Fortaleza</div>
-                            <div className="text-xs text-gray-500">Ceará</div>
-                          </a>
-                          <a href="https://maps.app.goo.gl/Ad4boE9j8QixStd28?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" className="block p-2 border border-border rounded hover:border-2 hover:border-red-500 transition-all duration-200">
-                            <div className="font-medium text-gray-700">Auditus São Luís</div>
-                            <div className="text-xs text-gray-500">Maranhão</div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div className="flex items-center space-x-3 p-3 border border-border rounded-lg">
-                        <Clock className="w-5 h-5 text-primary" />
-                        <div>
-                          <h4 className="font-semibold text-gray-700">Horário de Funcionamento</h4>
-                          <p className="text-sm text-gray-600">Seg-Sex: 8h-18h, Sáb: 9h-12h</p>
-                        </div>
-                      </div>
-
-                      <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer" className="block p-3 border border-border rounded-lg bg-gray-50 hover:border-2 hover:border-red-500 transition-all duration-200 cursor-pointer">
-                        <div className="font-semibold text-gray-700 text-center">Teste Auditivo Gratuito</div>
-                        <p className="text-xs text-gray-500 text-center mt-1">Agende já sua consulta</p>
-                      </a>
-                    </div>
-                  </div>
-                </PopoverContent>
-              </Popover>
+              <a href="#contato" className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm" onClick={toggleMenu}>Contato</a>
               <div className="w-full h-1 bg-gradient-to-r from-gray-100 to-gray-200 my-1"></div>
               <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer">
                 <Button className="btn-premium text-primary-foreground mt-1 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-sm py-2 px-4 mx-[10px]">
