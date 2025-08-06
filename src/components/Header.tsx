@@ -80,7 +80,7 @@ const Header = () => {
 
           {/* Centered Logo */}
           <div className="flex flex-col items-center justify-center mx-auto">
-            <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-32 w-auto drop-shadow-lg" />
+            <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto max-w-[200px] object-contain drop-shadow-lg" />
           </div>
 
           {/* Spacer to keep logo centered */}
