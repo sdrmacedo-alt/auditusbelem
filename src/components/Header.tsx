@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Menu, X, Phone, MapPin, Clock, MoreHorizontal } from 'lucide-react';
+import { Menu, X, Phone, MapPin, Clock, MoreHorizontal, Sun, Moon } from 'lucide-react';
+import { useTheme } from 'next-themes';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark');
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       {/* Top bar with contact info */}
       {/* Menu dropdown */}
@@ -83,8 +86,18 @@ const Header = () => {
             <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto max-w-[200px] object-contain drop-shadow-lg" />
           </div>
 
-          {/* Spacer to keep logo centered */}
-          <div className="w-20"></div>
+          {/* Theme toggle button */}
+          <button 
+            onClick={toggleTheme}
+            className="p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+            aria-label="Alternar tema"
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-6 h-6" />
+            ) : (
+              <Moon className="w-6 h-6" />
+            )}
+          </button>
         </div>
 
         {/* Mobile menu */}
