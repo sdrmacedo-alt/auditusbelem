@@ -22,6 +22,11 @@ const Hero = () => {
       title: "ReSound Key"
     },
     {
+      src: "/src/assets/jovem-festa-enzo-q.jpg",
+      alt: "Jovem numa festa usando aparelho auditivo ReSound Enzo Q",
+      title: "ReSound Enzo Q"
+    },
+    {
       src: "/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png",
       alt: "AUDITUS - Soluções Auditivas Premium",
       title: "Soluções Premium"
