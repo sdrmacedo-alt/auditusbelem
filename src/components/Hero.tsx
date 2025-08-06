@@ -102,7 +102,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-primary rounded-3xl opacity-20 blur-xl bg-zinc-700"></div>
               <div className="relative bg-card rounded-3xl p-8 shadow-elegant">
-                <Carousel setApi={setApi} className="w-full max-w-lg mx-auto">
+                <Carousel setApi={setApi} className="w-full max-w-lg mx-auto" opts={{ loop: true }}>
                   <CarouselContent>
                     {carouselImages.map((image, index) => <CarouselItem key={index}>
                         <div className="relative overflow-hidden rounded-2xl">
