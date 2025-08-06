@@ -2,23 +2,27 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
 import { useEffect, useState, useCallback } from 'react';
+import mulherAparelhoAuditivo from '@/assets/mulher-aparelho-auditivo.jpg';
+import casalRestaurante from '@/assets/casal-restaurante-omnia.jpg';
+import aparelhosPessoas from '@/assets/aparelhos-pessoas-ao-redor.jpg';
+import jovemFesta from '@/assets/jovem-festa-enzo-q.jpg';
 const Hero = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselImages = [{
-    src: "/src/assets/mulher-aparelho-auditivo.jpg",
+    src: mulherAparelhoAuditivo,
     alt: "Mulher usando aparelho auditivo ReSound Nexia",
     title: "ReSound Nexia"
   }, {
-    src: "/src/assets/casal-restaurante-omnia.jpg",
+    src: casalRestaurante,
     alt: "Casal conversando em restaurante com ReSound Omnia",
     title: "ReSound Omnia"
   }, {
-    src: "/src/assets/aparelhos-pessoas-ao-redor.jpg",
+    src: aparelhosPessoas,
     alt: "Aparelhos auditivos ReSound Key com fotografias de pessoas ao redor",
     title: "ReSound Key"
   }, {
-    src: "/src/assets/jovem-festa-enzo-q.jpg",
+    src: jovemFesta,
     alt: "Jovem numa festa usando aparelho auditivo ReSound Enzo Q",
     title: "ReSound Enzo Q"
   }];
