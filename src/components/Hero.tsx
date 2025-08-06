@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-primary rounded-3xl opacity-20 blur-xl bg-zinc-700"></div>
               <div className="relative bg-card rounded-3xl p-8 shadow-elegant">
-                <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS - Soluções Auditivas Premium" className="w-full h-auto animate-float" />
+                <img src="/src/assets/mulher-aparelho-auditivo.jpg" alt="Mulher usando aparelho auditivo ReSound Nexia" className="w-full h-auto animate-float rounded-2xl" />
               </div>
             </div>
             
