@@ -90,19 +90,19 @@ const Header = () => {
         {/* Mobile menu */}
         {isMenuOpen && <div className="absolute top-full left-4 z-50 mt-2 py-2 bg-white rounded-lg shadow-lg border border-gray-200 w-64 animate-fade-in">
             <div className="flex flex-col space-y-1">
-              <a href="#home" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Início</a>
+              <a href="#home" className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm" onClick={toggleMenu}>Início</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
-              <a href="#sobre-auditus" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Sobre</a>
+              <a href="#sobre-auditus" className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm" onClick={toggleMenu}>Sobre</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
-              <a href="https://www.resound.com/pt-br/hearing-aids/bluetooth-hearing-aids" target="_blank" rel="noopener noreferrer" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Aparelhos</a>
+              <a href="https://www.resound.com/pt-br/hearing-aids/bluetooth-hearing-aids" target="_blank" rel="noopener noreferrer" className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm" onClick={toggleMenu}>Aparelhos</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
-              <a href="#marcas" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Marcas</a>
+              <a href="#marcas" className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm" onClick={toggleMenu}>Marcas</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
-              <a href="#servicos" className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm" onClick={toggleMenu}>Serviços</a>
+              <a href="#servicos" className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm" onClick={toggleMenu}>Serviços</a>
               <div className="w-full h-px bg-gray-200 my-0.5"></div>
               <Popover>
                 <PopoverTrigger asChild>
-                  <button className="text-gray-700 font-bold hover:text-primary hover:bg-gray-50 transition-all duration-200 py-2 px-3 rounded-md border-l-4 border-transparent hover:border-primary text-sm w-full text-left" onClick={toggleMenu}>
+                  <button className="text-gray-700 font-bold hover:text-white hover:bg-red-500 transition-all duration-200 py-2 px-3 rounded-md text-sm w-full text-left" onClick={toggleMenu}>
                     Contato
                   </button>
                 </PopoverTrigger>
