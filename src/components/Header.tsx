@@ -73,37 +73,18 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-1 bg-secondary">
         <div className="flex justify-between items-center">
           {/* Mobile menu button - Left side */}
-          <button onClick={toggleMenu} className="lg:hidden p-2 text-white flex items-center space-x-2">
+          <button onClick={toggleMenu} className="p-2 text-white flex items-center space-x-2">
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             <span className="text-sm font-medium">Menu</span>
           </button>
 
-          {/* Left menu - Desktop only */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Início</a>
-            <a href="#sobre-auditus" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Sobre</a>
-            <a href="https://www.resound.com/pt-br/hearing-aids/bluetooth-hearing-aids" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Aparelhos</a>
-          </div>
-
           {/* Centered Logo */}
           <div className="flex flex-col items-center justify-center mx-auto">
-            <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-32 lg:h-40 w-auto drop-shadow-lg" />
+            <img src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" alt="AUDITUS" className="h-32 w-auto drop-shadow-lg" />
           </div>
 
-          {/* Right menu and CTA Button - Desktop */}
-          <div className="hidden lg:flex items-center space-x-6">
-            <div className="flex items-center space-x-8 mr-6">
-              <a href="#marcas" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Marcas</a>
-              <a href="#servicos" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Serviços</a>
-              <a href="#contato" className="text-foreground hover:text-primary transition-colors font-semibold text-lg hover:scale-105 transform duration-200">Contato</a>
-            </div>
-            <Button className="btn-premium text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
-              Agende Sua Consulta
-            </Button>
-          </div>
-
-          {/* Spacer for mobile to keep logo centered */}
-          <div className="lg:hidden w-20"></div>
+          {/* Spacer to keep logo centered */}
+          <div className="w-20"></div>
         </div>
 
         {/* Mobile menu */}
