@@ -12,6 +12,11 @@ const Hero = () => {
       title: "ReSound Nexia"
     },
     {
+      src: "/src/assets/casal-restaurante-omnia.jpg",
+      alt: "Casal conversando em restaurante com ReSound Omnia",
+      title: "ReSound Omnia"
+    },
+    {
       src: "/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png",
       alt: "AUDITUS - Soluções Auditivas Premium",
       title: "Soluções Premium"
