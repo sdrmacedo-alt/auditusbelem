@@ -157,7 +157,7 @@ const Header = () => {
               </Popover>
               <div className="w-full h-1 bg-gradient-to-r from-gray-100 to-gray-200 my-1"></div>
               <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer">
-                <Button className="btn-premium text-primary-foreground mt-1 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-sm py-2 w-full mx-[10px]">
+                <Button className="btn-premium text-primary-foreground mt-1 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-sm py-2 px-4 mx-[10px]">
                   Agende Sua Consulta
                 </Button>
               </a>
