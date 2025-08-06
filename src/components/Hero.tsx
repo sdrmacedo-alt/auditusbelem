@@ -25,18 +25,13 @@ const Hero = () => {
       src: "/src/assets/jovem-festa-enzo-q.jpg",
       alt: "Jovem numa festa usando aparelho auditivo ReSound Enzo Q",
       title: "ReSound Enzo Q"
-    },
-    {
-      src: "/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png",
-      alt: "AUDITUS - Soluções Auditivas Premium",
-      title: "Soluções Premium"
     }
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
-    }, 4000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [carouselImages.length]);
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
@@ -110,7 +105,7 @@ const Hero = () => {
                           <img 
                             src={image.src} 
                             alt={image.alt} 
-                            className="w-full h-auto animate-fade-in rounded-2xl transition-all duration-500 hover-scale" 
+                            className="w-full h-80 object-cover animate-fade-in rounded-2xl transition-all duration-500 hover-scale" 
                           />
                           <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-lg backdrop-blur-sm">
                             <span className="text-sm font-medium">{image.title}</span>
