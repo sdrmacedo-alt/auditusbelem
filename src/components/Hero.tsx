@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { useEffect, useState } from 'react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
+import { useEffect, useState, useCallback } from 'react';
 const Hero = () => {
+  const [api, setApi] = useState<CarouselApi>();
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const carouselImages = [
@@ -29,11 +30,22 @@ const Hero = () => {
   ];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
     }, 3000);
-    return () => clearInterval(timer);
-  }, [carouselImages.length]);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
+
+    api.on("select", () => {
+      setCurrentIndex(api.selectedScrollSnap());
+    });
+  }, [api]);
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-hero"></div>
@@ -97,7 +109,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-primary rounded-3xl opacity-20 blur-xl bg-zinc-700"></div>
               <div className="relative bg-card rounded-3xl p-8 shadow-elegant">
-                <Carousel className="w-full max-w-lg mx-auto">
+                <Carousel setApi={setApi} className="w-full max-w-lg mx-auto">
                   <CarouselContent>
                     {carouselImages.map((image, index) => (
                       <CarouselItem key={index}>
@@ -123,7 +135,11 @@ const Hero = () => {
                   {carouselImages.map((_, index) => (
                     <button
                       key={index}
-                      onClick={() => setCurrentIndex(index)}
+                      onClick={() => {
+                        if (api) {
+                          api.scrollTo(index);
+                        }
+                      }}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
                         index === currentIndex 
                           ? 'bg-primary w-6' 
