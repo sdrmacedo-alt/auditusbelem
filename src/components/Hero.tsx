@@ -17,6 +17,11 @@ const Hero = () => {
       title: "ReSound Omnia"
     },
     {
+      src: "/src/assets/resound-key-pessoas.jpg",
+      alt: "ReSound Key - Diversidade de pessoas e aparelhos auditivos",
+      title: "ReSound Key"
+    },
+    {
       src: "/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png",
       alt: "AUDITUS - Soluções Auditivas Premium",
       title: "Soluções Premium"
