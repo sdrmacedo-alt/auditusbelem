@@ -1,6 +1,29 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { useEffect, useState } from 'react';
 const Hero = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  const carouselImages = [
+    {
+      src: "/src/assets/mulher-aparelho-auditivo.jpg",
+      alt: "Mulher usando aparelho auditivo ReSound Nexia",
+      title: "ReSound Nexia"
+    },
+    {
+      src: "/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png",
+      alt: "AUDITUS - Soluções Auditivas Premium",
+      title: "Soluções Premium"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [carouselImages.length]);
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-hero"></div>
@@ -59,12 +82,46 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right content - Image */}
+          {/* Right content - Image Carousel */}
           <div className="relative animate-slide-up">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-primary rounded-3xl opacity-20 blur-xl bg-zinc-700"></div>
               <div className="relative bg-card rounded-3xl p-8 shadow-elegant">
-                <img src="/src/assets/mulher-aparelho-auditivo.jpg" alt="Mulher usando aparelho auditivo ReSound Nexia" className="w-full h-auto animate-float rounded-2xl" />
+                <Carousel className="w-full max-w-lg mx-auto">
+                  <CarouselContent>
+                    {carouselImages.map((image, index) => (
+                      <CarouselItem key={index}>
+                        <div className="relative overflow-hidden rounded-2xl">
+                          <img 
+                            src={image.src} 
+                            alt={image.alt} 
+                            className="w-full h-auto animate-fade-in rounded-2xl transition-all duration-500 hover-scale" 
+                          />
+                          <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-lg backdrop-blur-sm">
+                            <span className="text-sm font-medium">{image.title}</span>
+                          </div>
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 border-none shadow-lg" />
+                  <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 border-none shadow-lg" />
+                </Carousel>
+                
+                {/* Carousel indicators */}
+                <div className="flex justify-center mt-4 space-x-2">
+                  {carouselImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentIndex 
+                          ? 'bg-primary w-6' 
+                          : 'bg-gray-300 hover:bg-gray-400'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
             
