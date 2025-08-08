@@ -2,10 +2,6 @@ import { Card } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Ear, Armchair, MapPin, Stethoscope } from 'lucide-react';
 
-import img1 from '@/assets/mulher-aparelho-auditivo.jpg';
-import img2 from '@/assets/jovem-festa-enzo-q.jpg';
-import img3 from '@/assets/casal-restaurante-omnia.jpg';
-import img4 from '@/assets/aparelhos-pessoas-ao-redor.jpg';
 import Autoplay from 'embla-carousel-autoplay';
 
 const features = [
@@ -20,10 +16,10 @@ const galleries = [
     city: 'Belém',
     ariaLabel: 'Galeria da clínica Auditus em Belém',
     items: [
-      { src: img1, alt: 'Clínica Auditus em Belém - avaliação auditiva', caption: 'Belém — Ambientes modernos e confortáveis' },
-      { src: img2, alt: 'Paciente em Belém utilizando aparelho auditivo', caption: 'Belém — Tecnologia que transforma rotinas' },
-      { src: img3, alt: 'Casal em restaurante de Belém conversando com clareza', caption: 'Belém — Conforto para momentos especiais' },
-      { src: img4, alt: 'Equipamentos de ponta na unidade de Belém', caption: 'Belém — Equipamentos de ponta' },
+      { src: '/lovable-uploads/ba66c886-b78e-461e-af85-254204a176e1.png', alt: 'Sala de espera com mural na clínica Auditus em Belém', caption: 'Belém — Sala de espera com mural artístico' },
+      { src: '/lovable-uploads/1c2425ea-0f36-440d-810c-e718d7289cc1.png', alt: 'Área de atendimento com poltronas e balcão vermelho na clínica Auditus em Belém', caption: 'Belém — Área de atendimento' },
+      { src: '/lovable-uploads/9fa71ccf-a057-4255-a6ea-23f763a4c9a3.png', alt: 'Consultório da clínica Auditus em Belém', caption: 'Belém — Consultório' },
+      { src: '/lovable-uploads/578d0a34-9f54-4521-bfb5-b366fcdccdfa.png', alt: 'Sala técnica da clínica Auditus em Belém', caption: 'Belém — Sala técnica' },
     ],
   },
   {
