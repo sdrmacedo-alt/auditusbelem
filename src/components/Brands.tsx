@@ -59,7 +59,7 @@ const Brands = () => {
               </div>
 
               <div className="bg-gradient-card rounded-xl p-4">
-                <h4 className="font-semibold text-primary mb-2">• ReSound ENZO - Nosso aparelho auditivo para perda auditiva severa a profunda.</h4>
+                
                 <div className="text-sm text-muted-foreground space-y-1">
                   <div>• ReSound NEXIA - Som individualizado</div>
                   <div>• ReSound OMNIA - Audição em 360°</div>
@@ -68,10 +68,7 @@ const Brands = () => {
                 </div>
               </div>
 
-              <Button 
-                className="btn-premium-secondary w-full group"
-                onClick={() => window.open('https://www.resound.com/pt-br/hearing-aids/bluetooth-hearing-aids', '_blank')}
-              >
+              <Button className="btn-premium-secondary w-full group" onClick={() => window.open('https://www.resound.com/pt-br/hearing-aids/bluetooth-hearing-aids', '_blank')}>
                 Conheça os Produtos ReSound
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -131,10 +128,7 @@ const Brands = () => {
                 </div>
               </div>
 
-              <Button 
-                className="btn-premium-secondary w-full group"
-                onClick={() => window.open('https://www.beltone.com/pt-br/hearing-aids/beltone-hearing-solutions/beltone-amaze', '_blank')}
-              >
+              <Button className="btn-premium-secondary w-full group" onClick={() => window.open('https://www.beltone.com/pt-br/hearing-aids/beltone-hearing-solutions/beltone-amaze', '_blank')}>
                 Explore os Produtos Beltone
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -154,10 +148,7 @@ const Brands = () => {
                 desenvolvimento para oferecer as tecnologias mais avançadas do mercado.
               </p>
               <div className="flex justify-center">
-                <Button 
-                  className="btn-premium text-primary-foreground"
-                  onClick={() => window.open('https://www.gn.com', '_blank')}
-                >
+                <Button className="btn-premium text-primary-foreground" onClick={() => window.open('https://www.gn.com', '_blank')}>
                   Saiba Mais Sobre o Grupo GN
                 </Button>
               </div>
