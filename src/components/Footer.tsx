@@ -111,7 +111,7 @@ CEP: 60140-190
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
                   <div className="text-primary-foreground/60">(85) 99221-6433
-(85) 3099-2555
+ (85) 3099-2555
                 </div>
                 </div>
                 <div className="flex items-center space-x-3">
