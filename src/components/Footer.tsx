@@ -147,7 +147,9 @@ CEP:65076-908
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar horários da loja 3</div>
+                  <div className="text-primary-foreground/60">Seg-Sex: 8h às 18h
+Sábado9h às 12h
+                </div>
                 </div>
               </div>
             </div>
