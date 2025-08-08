@@ -92,14 +92,14 @@ const CareStructure = () => {
               <Carousel className="w-full" aria-label={gal.ariaLabel} opts={{ loop: true }} plugins={[Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })]}>
                 <CarouselContent>
                   {gal.items.map((g, i) => (
-                    <CarouselItem key={i} className="basis-full sm:basis-1/2 lg:basis-1/3 px-2">
-                      <figure className="rounded-xl overflow-hidden card-premium h-full">
+                    <CarouselItem key={i} className="basis-full px-2">
+                      <figure className="rounded-2xl overflow-hidden card-premium h-full border border-border bg-muted p-2">
                         <img
                           src={g.src}
                           alt={g.alt}
                           loading="lazy"
                           decoding="async"
-                          className="w-full h-56 md:h-64 object-cover"
+                          className="w-full h-56 md:h-64 object-cover rounded-xl"
                         />
                         {g.caption && (
                           <figcaption className="p-4 text-sm text-muted-foreground">
