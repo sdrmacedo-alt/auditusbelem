@@ -12,6 +12,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
+import MapBrazil from '@/components/MapBrazil';
 
 const Contact = () => {
   return (
@@ -273,21 +274,13 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Map placeholder */}
+        {/* Map section */}
         <div className="mt-16">
           <Card className="card-premium">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary">Nossa Localização</h3>
-              <div className="bg-muted rounded-xl h-64 flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <MapPin className="w-12 h-12 text-primary mx-auto" />
-                  <p className="text-muted-foreground">
-                    Mapa interativo será carregado aqui
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Rua das Flores, 123 - Centro, São Paulo - SP
-                  </p>
-                </div>
+              <div className="rounded-xl">
+                <MapBrazil />
               </div>
             </div>
           </Card>
