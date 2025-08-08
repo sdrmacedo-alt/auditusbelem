@@ -12,7 +12,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
-import MapBrazil from '@/components/MapBrazil';
+import MapBrazilIllustration from '@/components/MapBrazilIllustration';
 
 const Contact = () => {
   return (
@@ -280,7 +280,7 @@ const Contact = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary">Nossa Localização</h3>
               <div className="rounded-xl">
-                <MapBrazil />
+                <MapBrazilIllustration />
               </div>
             </div>
           </Card>
