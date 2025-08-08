@@ -1,6 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Ear, Armchair, MapPin, Stethoscope } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 import img1 from '@/assets/mulher-aparelho-auditivo.jpg';
 import img2 from '@/assets/jovem-festa-enzo-q.jpg';
 import img3 from '@/assets/casal-restaurante-omnia.jpg';
@@ -94,13 +95,17 @@ const CareStructure = () => {
                   {gal.items.map((g, i) => (
                     <CarouselItem key={i} className="basis-full px-2">
                       <figure className="rounded-2xl overflow-hidden card-premium h-full border border-border bg-muted p-2">
-                        <img
-                          src={g.src}
-                          alt={g.alt}
-                          loading="lazy"
-                          decoding="async"
-                          className="w-full h-56 md:h-64 object-cover rounded-xl"
-                        />
+                        <div className="w-full">
+                          <AspectRatio ratio={3/4} className="w-full max-w-sm md:max-w-md mx-auto rounded-xl overflow-hidden">
+                            <img
+                              src={g.src}
+                              alt={g.alt}
+                              loading="lazy"
+                              decoding="async"
+                              className="w-full h-full object-cover"
+                            />
+                          </AspectRatio>
+                        </div>
                         {g.caption && (
                           <figcaption className="p-4 text-sm text-muted-foreground">
                             {g.caption}
