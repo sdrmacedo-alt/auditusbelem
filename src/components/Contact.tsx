@@ -11,6 +11,7 @@ import {
   Calendar,
   ArrowRight
 } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 
 const Contact = () => {
   return (
@@ -32,58 +33,112 @@ const Contact = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">Informações de Contato</h3>
               
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary-foreground" />
+              <div className="space-y-8">
+                {/* Loja 1 - Belém */}
+                <div className="space-y-3">
+                  <div className="text-lg font-semibold text-primary">AUDITUS BELÉM</div>
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">
+                      <div>Trav. Dom Romualdo de Seixas, 832</div>
+                      <div>Umarizal - Belém, PA</div>
+                      <div>CEP: 66050-110</div>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-primary">Endereço</h4>
-                    <p className="text-muted-foreground">
-                      Rua das Flores, 123<br />
-                      Centro - São Paulo, SP<br />
-                      CEP: 01234-567
-                    </p>
+                  <div className="flex items-start space-x-3">
+                    <Phone className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground space-y-1">
+                      <div className="flex items-center justify-between gap-3">
+                        <span>(91) 98121-4819</span>
+                        <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp - Belém" className="p-1.5 rounded-md bg-primary/10 hover:bg-primary/20 transition-colors">
+                          <SiWhatsapp className="w-4 h-4 text-primary" />
+                        </a>
+                      </div>
+                      <div>(91) 3242-3546</div>
+                    </div>
                   </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary-foreground" />
+                  <div className="flex items-start space-x-3">
+                    <Mail className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">contato@auditusbelem.com.br</div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-primary">Telefone</h4>
-                    <p className="text-muted-foreground">
-                      (11) 9999-9999<br />
-                      (11) 3333-3333
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-primary">E-mail</h4>
-                    <p className="text-muted-foreground">
-                      contato@auditus.com.br<br />
-                      agendamento@auditus.com.br
-                    </p>
+                  <div className="flex items-start space-x-3">
+                    <Clock className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">
+                      <div>Seg-Sex: 8h às 18h</div>
+                      <div>Sábado: 9h às 12h</div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary-foreground" />
+                {/* Loja 2 - Fortaleza */}
+                <div className="space-y-3">
+                  <div className="text-lg font-semibold text-primary">AUDITUS FORTALEZA</div>
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">
+                      <div>Rua Monsenhor Bruno, 1153 Ed Scopa. Aldeota</div>
+                      <div>Fortaleza, CE</div>
+                      <div>CEP: 60140-190</div>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-primary">Horário de Funcionamento</h4>
-                    <p className="text-muted-foreground">
-                      Segunda a Sexta: 8h às 18h<br />
-                      Sábado: 8h às 12h<br />
-                      Domingo: Fechado
-                    </p>
+                  <div className="flex items-start space-x-3">
+                    <Phone className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground space-y-1">
+                      <div className="flex items-center justify-between gap-3">
+                        <span>(85) 99221-6433</span>
+                        <a href="https://wa.me/5585992216433" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp - Fortaleza" className="p-1.5 rounded-md bg-primary/10 hover:bg-primary/20 transition-colors">
+                          <SiWhatsapp className="w-4 h-4 text-primary" />
+                        </a>
+                      </div>
+                      <div>(85) 3099-2555</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Mail className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">contato@auditusfortaleza.com.br</div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Clock className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">
+                      <div>Seg-Sex: 9h às 18h</div>
+                      <div>Sábado: 9h às 12h</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Loja 3 - São Luís */}
+                <div className="space-y-3">
+                  <div className="text-lg font-semibold text-primary">AUDITUS SÃO LUÍS</div>
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">
+                      <div>Av. Professor Carlos Cunha. Ed. Medical Jaracaty, Sla: 813</div>
+                      <div>São Luís, MA</div>
+                      <div>CEP: 65076-908</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Phone className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground space-y-1">
+                      <div className="flex items-center justify-between gap-3">
+                        <span>(98) 98111-7197</span>
+                        <a href="https://wa.me/5598981117197" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp - São Luís" className="p-1.5 rounded-md bg-primary/10 hover:bg-primary/20 transition-colors">
+                          <SiWhatsapp className="w-4 h-4 text-primary" />
+                        </a>
+                      </div>
+                      <div>(98) 3221-3022</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Mail className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">contato@auditussaoluis.com.br</div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Clock className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <div className="text-muted-foreground">
+                      <div>Seg-Sex: 8h às 18h</div>
+                      <div>Sábado: 9h às 12h</div>
+                    </div>
                   </div>
                 </div>
               </div>
