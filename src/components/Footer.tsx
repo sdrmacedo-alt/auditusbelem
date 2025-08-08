@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/01d510ef-f009-4aca-9995-d63fede3bf58.png" 
-                alt="AUDITUS" 
-                className="h-12 w-auto filter brightness-0 invert"
+                src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" 
+                alt="Logo AUDITUS Aparelhos Auditivos" 
+                className="h-12 w-auto object-contain"
               />
               <div className="text-2xl font-bold">AUDITUS</div>
             </div>
