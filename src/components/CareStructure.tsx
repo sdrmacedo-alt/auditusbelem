@@ -5,6 +5,7 @@ import img1 from '@/assets/mulher-aparelho-auditivo.jpg';
 import img2 from '@/assets/jovem-festa-enzo-q.jpg';
 import img3 from '@/assets/casal-restaurante-omnia.jpg';
 import img4 from '@/assets/aparelhos-pessoas-ao-redor.jpg';
+import Autoplay from 'embla-carousel-autoplay';
 
 const features = [
   { icon: Ear, title: 'Cabines acústicas certificadas' },
@@ -88,7 +89,7 @@ const CareStructure = () => {
                 </h3>
               </div>
 
-              <Carousel className="w-full" aria-label={gal.ariaLabel}>
+              <Carousel className="w-full" aria-label={gal.ariaLabel} opts={{ loop: true }} plugins={[Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })]}>
                 <CarouselContent>
                   {gal.items.map((g, i) => (
                     <CarouselItem key={i} className="basis-full sm:basis-1/2 lg:basis-1/3 px-2">
