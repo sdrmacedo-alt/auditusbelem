@@ -40,10 +40,10 @@ const galleries = [
     city: 'Fortaleza',
     ariaLabel: 'Galeria da clínica Auditus em Fortaleza',
     items: [
-      { src: img1, alt: 'Clínica Auditus em Fortaleza - avaliação auditiva', caption: 'Fortaleza — Ambientes modernos e confortáveis' },
-      { src: img2, alt: 'Paciente em Fortaleza utilizando aparelho auditivo', caption: 'Fortaleza — Tecnologia que transforma rotinas' },
-      { src: img3, alt: 'Casal em restaurante de Fortaleza conversando com clareza', caption: 'Fortaleza — Conforto para momentos especiais' },
-      { src: img4, alt: 'Equipamentos de ponta na unidade de Fortaleza', caption: 'Fortaleza — Equipamentos de ponta' },
+      { src: '/lovable-uploads/d7c192e4-5a07-47e4-a7a3-a354b77876ec.png', alt: 'Sala de convivência da clínica Auditus em Fortaleza', caption: 'Fortaleza — Sala de convivência' },
+      { src: '/lovable-uploads/cf4b956a-5c37-4ae8-be41-f688dcdba1d2.png', alt: 'Consultório da clínica Auditus em Fortaleza', caption: 'Fortaleza — Consultório' },
+      { src: '/lovable-uploads/cd8604f8-e5f9-482d-8a15-e43134c3a7f3.png', alt: 'Cabine acústica da clínica Auditus em Fortaleza', caption: 'Fortaleza — Cabine acústica' },
+      { src: '/lovable-uploads/32c21275-3f19-40eb-9bde-79fb2f56d4b5.png', alt: 'Recepção da clínica Auditus em Fortaleza', caption: 'Fortaleza — Recepção' },
     ],
   },
 ];
