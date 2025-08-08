@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
@@ -79,10 +80,13 @@ const Footer = () => {
                 
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
-                  <div className="text-primary-foreground/80">
-                    <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors underline underline-offset-2">
-                      (91) 98121-4819 (WhatsApp)
-                    </a>
+                  <div className="text-primary-foreground/80 space-y-1">
+                    <div className="flex items-center justify-between gap-3">
+                      <span>(91) 98121-4819</span>
+                      <a href="https://wa.me/5591981214819" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp - Belém" className="p-1.5 rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+                        <SiWhatsapp className="w-5 h-5 text-primary-foreground" />
+                      </a>
+                    </div>
                     <div>(91) 3242-3546</div>
                   </div>
                 </div>
@@ -112,10 +116,13 @@ CEP: 60140-190
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">
-                    <a href="https://wa.me/5585992216433" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors underline underline-offset-2">
-                      (85) 99221-6433 (WhatsApp)
-                    </a>
+                  <div className="text-primary-foreground/60 space-y-1">
+                    <div className="flex items-center justify-between gap-3">
+                      <span>(85) 99221-6433</span>
+                      <a href="https://wa.me/5585992216433" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp - Fortaleza" className="p-1.5 rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+                        <SiWhatsapp className="w-5 h-5 text-primary-foreground" />
+                      </a>
+                    </div>
                     <div>(85) 3099-2555</div>
                   </div>
                 </div>
@@ -142,10 +149,13 @@ CEP:65076-908
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">
-                    <a href="https://wa.me/5598981117197" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors underline underline-offset-2">
-                      (98) 98111-7197 (WhatsApp)
-                    </a>
+                  <div className="text-primary-foreground/60 space-y-1">
+                    <div className="flex items-center justify-between gap-3">
+                      <span>(98) 98111-7197</span>
+                      <a href="https://wa.me/5598981117197" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp - São Luís" className="p-1.5 rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+                        <SiWhatsapp className="w-5 h-5 text-primary-foreground" />
+                      </a>
+                    </div>
                     <div>(98) 3221-3022</div>
                   </div>
                 </div>
