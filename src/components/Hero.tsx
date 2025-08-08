@@ -66,7 +66,7 @@ const Hero = () => {
                 e{" "}
                 <span className="text-destructive">transformação</span>.
               </h1>
-              <p className="subheading-premium max-w-2xl text-white text-left">Na AUDITUS, cada jornada auditiva é única. Não vemos apenas uma perda auditiva, mas uma pessoa com suas histórias e necessidades. Nossa equipe é treinada para ouvir com empatia e oferecer suporte personalizado.</p>
+              <p className="subheading-premium max-w-2xl text-white text-left">Na AUDITUS, cada jornada auditiva é única. Todo som tem um sentido, reconectamos você com o que realmente importa: suas histórias, seus laços, sua vida.</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
