@@ -37,7 +37,7 @@ const Contact = () => {
                 {/* Loja 1 - Belém */}
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-lg font-semibold text-primary">
-                    <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
+                    <img src="/lovable-uploads/e332bcc7-33f7-4089-b5cc-944310fc0047.png" alt="Ícone Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
                     <span>AUDITUS BELÉM</span>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -76,7 +76,7 @@ const Contact = () => {
                 {/* Loja 2 - Fortaleza */}
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-lg font-semibold text-primary">
-                    <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
+                    <img src="/lovable-uploads/e332bcc7-33f7-4089-b5cc-944310fc0047.png" alt="Ícone Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
                     <span>AUDITUS FORTALEZA</span>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -115,7 +115,7 @@ const Contact = () => {
                 {/* Loja 3 - São Luís */}
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-lg font-semibold text-primary">
-                    <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
+                    <img src="/lovable-uploads/e332bcc7-33f7-4089-b5cc-944310fc0047.png" alt="Ícone Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
                     <span>AUDITUS SÃO LUÍS</span>
                   </div>
                   <div className="flex items-start space-x-3">
