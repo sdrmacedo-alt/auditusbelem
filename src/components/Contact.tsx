@@ -36,7 +36,10 @@ const Contact = () => {
               <div className="space-y-8">
                 {/* Loja 1 - Belém */}
                 <div className="space-y-3">
-                  <div className="text-lg font-semibold text-primary">AUDITUS BELÉM</div>
+                  <div className="flex items-center gap-2 text-lg font-semibold text-primary">
+                    <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
+                    <span>AUDITUS BELÉM</span>
+                  </div>
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
                     <div className="text-muted-foreground">
@@ -72,7 +75,10 @@ const Contact = () => {
 
                 {/* Loja 2 - Fortaleza */}
                 <div className="space-y-3">
-                  <div className="text-lg font-semibold text-primary">AUDITUS FORTALEZA</div>
+                  <div className="flex items-center gap-2 text-lg font-semibold text-primary">
+                    <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
+                    <span>AUDITUS FORTALEZA</span>
+                  </div>
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
                     <div className="text-muted-foreground">
@@ -108,7 +114,10 @@ const Contact = () => {
 
                 {/* Loja 3 - São Luís */}
                 <div className="space-y-3">
-                  <div className="text-lg font-semibold text-primary">AUDITUS SÃO LUÍS</div>
+                  <div className="flex items-center gap-2 text-lg font-semibold text-primary">
+                    <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo Auditus" className="h-5 w-auto object-contain" loading="lazy" decoding="async" />
+                    <span>AUDITUS SÃO LUÍS</span>
+                  </div>
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
                     <div className="text-muted-foreground">
