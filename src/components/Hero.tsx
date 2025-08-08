@@ -66,7 +66,7 @@ const Hero = () => {
                 e{" "}
                 <span className="text-destructive">transformação</span>.
               </h1>
-              <p className="subheading-premium max-w-2xl text-white text-left">Na AUDITUS, cada jornada auditiva é única. Não vemos apenas uma perda auditiva, mas uma pessoa com suas histórias e necessidades. Nossa equipe é treinada para ouvir com empatia, oferecer suporte personalizado</p>
+              <p className="subheading-premium max-w-2xl text-white text-left">Na AUDITUS, cada jornada auditiva é única. Não vemos apenas uma perda auditiva, mas uma pessoa com suas histórias e necessidades. Nossa equipe é treinada para ouvir com empatia, oferecer suporte personalizado.</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -102,7 +102,9 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-primary rounded-3xl opacity-20 blur-xl bg-zinc-700"></div>
               <div className="relative bg-card rounded-3xl p-8 shadow-elegant">
-                <Carousel setApi={setApi} className="w-full max-w-lg mx-auto" opts={{ loop: true }}>
+                <Carousel setApi={setApi} className="w-full max-w-lg mx-auto" opts={{
+                loop: true
+              }}>
                   <CarouselContent>
                     {carouselImages.map((image, index) => <CarouselItem key={index}>
                         <div className="relative overflow-hidden rounded-2xl">
