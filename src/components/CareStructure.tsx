@@ -28,10 +28,10 @@ const galleries = [
     city: 'São Luís',
     ariaLabel: 'Galeria da clínica Auditus em São Luís',
     items: [
-      { src: img1, alt: 'Clínica Auditus em São Luís - avaliação auditiva', caption: 'São Luís — Ambientes modernos e confortáveis' },
-      { src: img2, alt: 'Paciente em São Luís utilizando aparelho auditivo', caption: 'São Luís — Tecnologia que transforma rotinas' },
-      { src: img3, alt: 'Casal em restaurante de São Luís conversando com clareza', caption: 'São Luís — Conforto para momentos especiais' },
-      { src: img4, alt: 'Equipamentos de ponta na unidade de São Luís', caption: 'São Luís — Equipamentos de ponta' },
+      { src: '/lovable-uploads/c712f627-947c-464a-aecb-03fae870d662.png', alt: 'Sala de espera da clínica Auditus em São Luís', caption: 'São Luís — Sala de espera' },
+      { src: '/lovable-uploads/76a7684f-609b-403d-a152-4ee99ffeb229.png', alt: 'Consultório da clínica Auditus em São Luís', caption: 'São Luís — Consultório' },
+      { src: '/lovable-uploads/80524d40-ef31-4605-a99a-9bc0d5d954be.png', alt: 'Cabine acústica da clínica Auditus em São Luís', caption: 'São Luís — Cabine acústica' },
+      { src: '/lovable-uploads/c1eda176-1d30-4873-9f7e-7c04df56faf5.png', alt: 'Cabine acústica aberta da clínica Auditus em São Luís', caption: 'São Luís — Cabine acústica' },
     ],
   },
   {
