@@ -54,10 +54,10 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="text-primary-foreground/80">Avaliação Auditiva Gratuita</div>
               <div className="text-primary-foreground/80">Adaptação de Aparelhos</div>
-              <div className="text-primary-foreground/80">Manutenção Técnica</div>
-              <div className="text-primary-foreground/80">Atendimento Domiciliar</div>
+              <div className="text-primary-foreground/80">Assistência Técnica</div>
+              <div className="text-primary-foreground/80">Atendimento no conforto do seu lar</div>
               <div className="text-primary-foreground/80">Garantia Estendida</div>
-              <div className="text-primary-foreground/80">Suporte 24/7</div>
+              <div className="text-primary-foreground/80">Programa de acompanhamento auditivo</div>
             </div>
           </div>
 
