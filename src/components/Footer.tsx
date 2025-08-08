@@ -131,7 +131,9 @@ Sábado: 9h às 12h
                 <div className="text-lg font-medium">AUDITUS SÃO LUÍS</div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Av. Professor Carlos Cunha. Ed. Medical Jaracaty, sala: 813</div>
+                  <div className="text-primary-foreground/60">Av. Professor Carlos Cunha. Ed. Medical Jaracaty, sala: 813
+CEP:65076-908
+                </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
