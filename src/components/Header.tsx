@@ -43,7 +43,7 @@ const Header = () => {
                           <img
                             src="/lovable-uploads/19b7412f-7c9a-4048-9fab-af1c6e415cb6.png"
                             alt="Ícone da loja Auditus"
-                            className="w-5 h-5 object-contain"
+                             className="w-8 h-8 object-contain"
                             loading="lazy"
                             decoding="async"
                           />
@@ -58,7 +58,7 @@ const Header = () => {
                           <img
                             src="/lovable-uploads/19b7412f-7c9a-4048-9fab-af1c6e415cb6.png"
                             alt="Ícone da loja Auditus"
-                            className="w-5 h-5 object-contain"
+                             className="w-8 h-8 object-contain"
                             loading="lazy"
                             decoding="async"
                           />
@@ -73,7 +73,7 @@ const Header = () => {
                           <img
                             src="/lovable-uploads/19b7412f-7c9a-4048-9fab-af1c6e415cb6.png"
                             alt="Ícone da loja Auditus"
-                            className="w-5 h-5 object-contain"
+                            className="w-8 h-8 object-contain"
                             loading="lazy"
                             decoding="async"
                           />
