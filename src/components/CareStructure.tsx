@@ -13,11 +13,37 @@ const features = [
   { icon: Stethoscope, title: 'Atendimento personalizado por fonoaudiólogos especializados' },
 ];
 
-const gallery = [
-  { src: img1, alt: 'Avaliação auditiva em clínica Auditus', caption: 'Ambientes modernos e confortáveis' },
-  { src: img2, alt: 'Paciente feliz utilizando aparelho auditivo', caption: 'Tecnologia que transforma rotinas' },
-  { src: img3, alt: 'Casal em restaurante conversando com clareza', caption: 'Conforto para momentos especiais' },
-  { src: img4, alt: 'Aparelhos auditivos e atendimento humanizado', caption: 'Equipamentos de ponta' },
+const galleries = [
+  {
+    city: 'Belém',
+    ariaLabel: 'Galeria da clínica Auditus em Belém',
+    items: [
+      { src: img1, alt: 'Clínica Auditus em Belém - avaliação auditiva', caption: 'Belém — Ambientes modernos e confortáveis' },
+      { src: img2, alt: 'Paciente em Belém utilizando aparelho auditivo', caption: 'Belém — Tecnologia que transforma rotinas' },
+      { src: img3, alt: 'Casal em restaurante de Belém conversando com clareza', caption: 'Belém — Conforto para momentos especiais' },
+      { src: img4, alt: 'Equipamentos de ponta na unidade de Belém', caption: 'Belém — Equipamentos de ponta' },
+    ],
+  },
+  {
+    city: 'São Luís',
+    ariaLabel: 'Galeria da clínica Auditus em São Luís',
+    items: [
+      { src: img1, alt: 'Clínica Auditus em São Luís - avaliação auditiva', caption: 'São Luís — Ambientes modernos e confortáveis' },
+      { src: img2, alt: 'Paciente em São Luís utilizando aparelho auditivo', caption: 'São Luís — Tecnologia que transforma rotinas' },
+      { src: img3, alt: 'Casal em restaurante de São Luís conversando com clareza', caption: 'São Luís — Conforto para momentos especiais' },
+      { src: img4, alt: 'Equipamentos de ponta na unidade de São Luís', caption: 'São Luís — Equipamentos de ponta' },
+    ],
+  },
+  {
+    city: 'Fortaleza',
+    ariaLabel: 'Galeria da clínica Auditus em Fortaleza',
+    items: [
+      { src: img1, alt: 'Clínica Auditus em Fortaleza - avaliação auditiva', caption: 'Fortaleza — Ambientes modernos e confortáveis' },
+      { src: img2, alt: 'Paciente em Fortaleza utilizando aparelho auditivo', caption: 'Fortaleza — Tecnologia que transforma rotinas' },
+      { src: img3, alt: 'Casal em restaurante de Fortaleza conversando com clareza', caption: 'Fortaleza — Conforto para momentos especiais' },
+      { src: img4, alt: 'Equipamentos de ponta na unidade de Fortaleza', caption: 'Fortaleza — Equipamentos de ponta' },
+    ],
+  },
 ];
 
 const CareStructure = () => {
@@ -49,32 +75,45 @@ const CareStructure = () => {
           ))}
         </div>
 
-        {/* Galeria horizontal */}
-        <div className="relative">
-          <Carousel className="w-full" aria-label="Galeria da clínica Auditus">
-            <CarouselContent>
-              {gallery.map((g, i) => (
-                <CarouselItem key={i} className="basis-full sm:basis-1/2 lg:basis-1/3 px-2">
-                  <figure className="rounded-xl overflow-hidden card-premium h-full">
-                    <img
-                      src={g.src}
-                      alt={g.alt}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-56 md:h-64 object-cover"
-                    />
-                    {g.caption && (
-                      <figcaption className="p-4 text-sm text-muted-foreground">
-                        {g.caption}
-                      </figcaption>
-                    )}
-                  </figure>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious aria-label="Imagem anterior" />
-            <CarouselNext aria-label="Próxima imagem" />
-          </Carousel>
+        {/* Galerias por unidade */}
+        <div className="space-y-8">
+          {galleries.map((gal, idx) => (
+            <section key={idx} aria-labelledby={`galeria-${idx}`} className="relative">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
+                  <MapPin className="w-4 h-4 text-primary-foreground" aria-hidden="true" />
+                </div>
+                <h3 id={`galeria-${idx}`} className="text-xl font-semibold text-primary">
+                  {gal.city}
+                </h3>
+              </div>
+
+              <Carousel className="w-full" aria-label={gal.ariaLabel}>
+                <CarouselContent>
+                  {gal.items.map((g, i) => (
+                    <CarouselItem key={i} className="basis-full sm:basis-1/2 lg:basis-1/3 px-2">
+                      <figure className="rounded-xl overflow-hidden card-premium h-full">
+                        <img
+                          src={g.src}
+                          alt={g.alt}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-56 md:h-64 object-cover"
+                        />
+                        {g.caption && (
+                          <figcaption className="p-4 text-sm text-muted-foreground">
+                            {g.caption}
+                          </figcaption>
+                        )}
+                      </figure>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious aria-label="Imagem anterior" />
+                <CarouselNext aria-label="Próxima imagem" />
+              </Carousel>
+            </section>
+          ))}
         </div>
       </div>
     </section>
