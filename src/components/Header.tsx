@@ -83,7 +83,7 @@ const Header = () => {
 
           {/* Centered Logo */}
           <div className="flex flex-col items-center justify-center mx-auto">
-            <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo AUDITUS Aparelhos Auditivos" className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto max-w-[200px] object-contain drop-shadow-lg" />
+            <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo AUDITUS Aparelhos Auditivos" className="h-24 sm:h-28 md:h-32 lg:h-32 w-auto max-w-[230px] object-contain filter brightness-0 invert drop-shadow-[0_4px_14px_hsl(var(--foreground)/0.35)]" fetchPriority="high" decoding="async" />
           </div>
 
           {/* Theme toggle button */}

@@ -11,7 +11,9 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" 
                 alt="Logo AUDITUS Aparelhos Auditivos" 
-                className="h-12 w-auto object-contain"
+                className="h-12 w-auto object-contain filter brightness-0 invert drop-shadow-[0_2px_10px_hsl(var(--foreground)/0.25)]"
+                loading="lazy"
+                decoding="async"
               />
               <div className="text-2xl font-bold">AUDITUS</div>
             </div>
