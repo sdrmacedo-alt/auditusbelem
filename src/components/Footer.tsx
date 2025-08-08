@@ -1,21 +1,13 @@
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" 
-                alt="Logo AUDITUS Aparelhos Auditivos" 
-                className="h-12 w-auto object-contain filter brightness-0 invert drop-shadow-[0_2px_10px_hsl(var(--foreground)/0.25)]"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="text-2xl font-bold">AUDITUS</div>
+              <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo AUDITUS Aparelhos Auditivos" className="h-12 w-auto object-contain filter brightness-0 invert drop-shadow-[0_2px_10px_hsl(var(--foreground)/0.25)]" loading="lazy" decoding="async" />
+              
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               Especialistas em soluções auditivas premium. 
@@ -147,8 +139,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
