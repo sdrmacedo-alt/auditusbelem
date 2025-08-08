@@ -43,6 +43,7 @@ const galleries = [
       { src: '/lovable-uploads/cf4b956a-5c37-4ae8-be41-f688dcdba1d2.png', alt: 'Consultório da clínica Auditus em Fortaleza', caption: 'Fortaleza — Consultório moderno e confortável' },
       { src: '/lovable-uploads/32c21275-3f19-40eb-9bde-79fb2f56d4b5.png', alt: 'Recepção da clínica Auditus em Fortaleza', caption: 'Fortaleza — Recepção acolhedora' },
       { src: '/lovable-uploads/d7c192e4-5a07-47e4-a7a3-a354b77876ec.png', alt: 'Sala de convivência da clínica Auditus em Fortaleza', caption: 'Fortaleza — Sala de convivência e espera' },
+      { src: '/lovable-uploads/654bca10-a61a-4a4c-9329-d9eeda2b453e.png', alt: 'Sala de espera da clínica Auditus em Fortaleza', caption: 'Fortaleza — Sala de espera com poltronas' },
     ],
   },
 ];
