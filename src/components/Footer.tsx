@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className="text-primary-foreground/80">
                   <div>Auditus Belém: Travessa Dom Romualdo de Seixas, 832</div>
                   <div>Umarizal - Belém, PA</div>
-                  <div>CEP: 01234-567</div>
+                  <div>CEP: 66050-110</div>
                 </div>
               </div>
               
