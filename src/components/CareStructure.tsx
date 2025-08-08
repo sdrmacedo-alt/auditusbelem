@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Ear, Armchair, MapPin, Stethoscope } from 'lucide-react';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
+
 import img1 from '@/assets/mulher-aparelho-auditivo.jpg';
 import img2 from '@/assets/jovem-festa-enzo-q.jpg';
 import img3 from '@/assets/casal-restaurante-omnia.jpg';
@@ -94,29 +94,23 @@ const CareStructure = () => {
                 <CarouselContent>
                   {gal.items.map((g, i) => (
                     <CarouselItem key={i} className="basis-full px-2">
-                      <figure className="rounded-2xl overflow-hidden card-premium h-full border border-border bg-muted p-2">
-                        <div className="w-full">
-                          <AspectRatio ratio={3/4} className="w-full max-w-sm md:max-w-md mx-auto rounded-xl overflow-hidden">
-                            <img
-                              src={g.src}
-                              alt={g.alt}
-                              loading="lazy"
-                              decoding="async"
-                              className="w-full h-full object-cover"
-                            />
-                          </AspectRatio>
+                      <div className="relative overflow-hidden rounded-2xl">
+                        <img
+                          src={g.src}
+                          alt={g.alt}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-80 object-cover animate-fade-in rounded-2xl transition-all duration-500 hover-scale"
+                        />
+                        <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-lg backdrop-blur-sm">
+                          <span className="text-sm font-medium">{gal.city}</span>
                         </div>
-                        {g.caption && (
-                          <figcaption className="p-4 text-sm text-muted-foreground">
-                            {g.caption}
-                          </figcaption>
-                        )}
-                      </figure>
+                      </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious aria-label="Imagem anterior" />
-                <CarouselNext aria-label="Próxima imagem" />
+                <CarouselPrevious aria-label="Imagem anterior" className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 border-none shadow-lg" />
+                <CarouselNext aria-label="Próxima imagem" className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 border-none shadow-lg" />
               </Carousel>
             </section>
           ))}
