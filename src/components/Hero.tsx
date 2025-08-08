@@ -60,11 +60,11 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-8 animate-fade-in bg-zinc-500">
             <div className="space-y-4">
               <h1 className="heading-premium">
-                Descubra um
-                <br />
-                <span className="text-secondary">Novo Mundo</span>
-                <br />
-                de Sons
+                Muito além de aparelhos:{" "}
+                <span className="text-destructive">escuta</span>{" "}
+                <span className="text-destructive">empatia</span>{" "}
+                e{" "}
+                <span className="text-destructive">transformação</span>.
               </h1>
               <p className="subheading-premium max-w-2xl text-white text-left">Na AUDITUS, cada jornada auditiva é única. Não vemos apenas uma perda auditiva, mas uma pessoa com suas histórias e necessidades. Nossa equipe é treinada para ouvir com empatia, oferecer suporte personalizado</p>
             </div>
