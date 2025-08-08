@@ -41,7 +41,9 @@ const Contact = () => {
                     <span>AUDITUS BELÉM</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <a href="https://www.google.com/maps?q=Trav.+Dom+Romualdo+de+Seixas,+832,+Umarizal,+Belém+-+PA,+66050-110" target="_blank" rel="noopener noreferrer" aria-label="Abrir no Google Maps - Belém">
+                      <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    </a>
                     <div className="text-muted-foreground">
                       <div>Trav. Dom Romualdo de Seixas, 832</div>
                       <div>Umarizal - Belém, PA</div>
@@ -80,7 +82,9 @@ const Contact = () => {
                     <span>AUDITUS FORTALEZA</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <a href="https://www.google.com/maps?q=Rua+Monsenhor+Bruno,+1153,+Ed+Scopa,+Aldeota,+Fortaleza+-+CE,+60140-190" target="_blank" rel="noopener noreferrer" aria-label="Abrir no Google Maps - Fortaleza">
+                      <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    </a>
                     <div className="text-muted-foreground">
                       <div>Rua Monsenhor Bruno, 1153 Ed Scopa. Aldeota</div>
                       <div>Fortaleza, CE</div>
@@ -119,7 +123,9 @@ const Contact = () => {
                     <span>AUDITUS SÃO LUÍS</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    <a href="https://www.google.com/maps?q=Av.+Professor+Carlos+Cunha,+Medical+Jaracaty,+Sala+813,+São+Luís+-+MA,+65076-908" target="_blank" rel="noopener noreferrer" aria-label="Abrir no Google Maps - São Luís">
+                      <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                    </a>
                     <div className="text-muted-foreground">
                       <div>Av. Professor Carlos Cunha. Ed. Medical Jaracaty, Sla: 813</div>
                       <div>São Luís, MA</div>
