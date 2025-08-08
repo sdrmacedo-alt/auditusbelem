@@ -43,7 +43,7 @@ const About = () => {
             </div>
 
             <div className="bg-gradient-card rounded-2xl p-6 shadow-card">
-              <h4 className="text-xl font-semibold text-primary mb-4">Por que escolher o AUDITUS?</h4>
+              <h4 className="text-xl font-semibold text-primary mb-4">Por que escolher a AUDITUS?</h4>
               <ul className="space-y-3">
                 <li className="flex items-center text-muted-foreground">
                   <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
