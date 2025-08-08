@@ -104,7 +104,7 @@ const Footer = () => {
                 <div className="text-lg font-medium">AUDITUS FORTALEZA</div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Rua Monsenhor Bruno, 1153 Ed Scopa. Aldeota Fortaleza, CE 
+                  <div className="text-primary-foreground/60">Rua Monsenhor Bruno, 1153 Ed Scopa. Aldeota Fortaleza, CE
 CEP: 60140-190
                 </div>
                 </div>
