@@ -69,7 +69,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div className="text-primary-foreground/80">
                   <div>Auditus Belém: Travessa Dom Romualdo de Seixas, 832</div>
-                  <div>Centro - São Paulo, SP</div>
+                  <div>Umarizal - Belém, PA</div>
                   <div>CEP: 01234-567</div>
                 </div>
               </div>
