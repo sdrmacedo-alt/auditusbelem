@@ -78,22 +78,20 @@ const Footer = () => {
                 <Phone className="w-5 h-5 flex-shrink-0" />
                 <div className="text-primary-foreground/80">
                   <div>(91) 98121-4819</div>
-                  <div>(11) 3333-3333</div>
+                  <div>(91) 3242-3546</div>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <div className="text-primary-foreground/80">
-                  contato@auditus.com.br
-                </div>
+                <div className="text-primary-foreground/80">contato@auditusbelem.com.br</div>
               </div>
               
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div className="text-primary-foreground/80">
                   <div>Seg-Sex: 8h às 18h</div>
-                  <div>Sábado: 8h às 12h</div>
+                  <div>Sábado: 9h às 12h</div>
                 </div>
               </div>
             </div>
