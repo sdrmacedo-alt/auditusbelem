@@ -67,7 +67,7 @@ const Footer = () => {
             <div className="grid gap-6 md:grid-cols-3">
               {/* Loja 1 */}
               <div className="space-y-3">
-                <div className="text-lg font-medium">Loja Belém - Umarizal</div>
+                <div className="text-lg font-medium">AUDITUS BELÉM</div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <div className="text-primary-foreground/80">
@@ -101,39 +101,48 @@ const Footer = () => {
 
               {/* Loja 2 */}
               <div className="space-y-3">
-                <div className="text-lg font-medium">Loja 2</div>
+                <div className="text-lg font-medium">AUDITUS FORTALEZA</div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar endereço da loja 2</div>
+                  <div className="text-primary-foreground/60">Rua Monsenhor Bruno, 1153 Ed Scopa.
+Aldeota Fortaleza, CE
+CEP: 60140-190
+                </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar telefones da loja 2</div>
+                  <div className="text-primary-foreground/60">(85) 99221-6433
+(85) 3099-2555
+                </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar e-mail da loja 2</div>
+                  <div className="text-primary-foreground/60">contato@auditusfortaleza.com.br</div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar horários da loja 2</div>
+                  <div className="text-primary-foreground/60">Seg-Sex: 9h às 18h
+Sábado: 9h às 12h
+                </div>
                 </div>
               </div>
 
               {/* Loja 3 */}
               <div className="space-y-3">
-                <div className="text-lg font-medium">Loja 3</div>
+                <div className="text-lg font-medium">AUDITUS SÃO LUÍS</div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar endereço da loja 3</div>
+                  <div className="text-primary-foreground/60">Av. Professor Carlos Cunha. Ed. Medical Jaracaty, sala: 813</div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar telefones da loja 3</div>
+                  <div className="text-primary-foreground/60">(98) 98111-7197
+(98) 3221-3022
+                </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 flex-shrink-0" />
-                  <div className="text-primary-foreground/60">Adicionar e-mail da loja 3</div>
+                  <div className="text-primary-foreground/60">contato@auditussaoluis.com.br</div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
