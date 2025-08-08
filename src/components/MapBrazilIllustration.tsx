@@ -150,15 +150,18 @@ const MapBrazilIllustration: React.FC = () => {
           const coords = saved ? toPixels(saved.nx, saved.ny) : toPixels(0.5, 0.5);
           const visible = cw > 0 && ch > 0;
           return (
-            <div
+            <a
               key={loc.city}
-              className="absolute select-none cursor-grab active:cursor-grabbing touch-none"
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc.address)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute select-none cursor-pointer touch-none focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-full"
               style={{ left: coords.x, top: coords.y, transform: 'translate(-50%, -50%)', visibility: visible ? 'visible' : 'hidden' }}
-              aria-label={`AUDITUS ${loc.city} — ${loc.state}`}
-              onPointerDown={startDrag(loc.city)}
+              aria-label={`Abrir AUDITUS ${loc.city} — ${loc.state} no Google Maps`}
+              title={`AUDITUS ${loc.city} — abrir no Google Maps`}
             >
               <span className="block w-3 h-3 rounded-full bg-secondary ring-2 ring-secondary/30 shadow-md" />
-            </div>
+            </a>
           );
         })}
       </div>
@@ -167,7 +170,7 @@ const MapBrazilIllustration: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent to-background/10" />
 
       <figcaption className="sr-only">
-        Arraste os pontos para ajustar Belém (PA), Fortaleza (CE) e São Luís (MA).
+        Clique nos pontos para abrir o endereço de Belém (PA), Fortaleza (CE) e São Luís (MA) no Google Maps.
       </figcaption>
     </figure>
   );
