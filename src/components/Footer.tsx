@@ -9,11 +9,7 @@ const Footer = () => {
               <img src="/lovable-uploads/97ac276d-3508-4f6a-9e64-dd2ffba4013c.png" alt="Logo AUDITUS Aparelhos Auditivos" className="h-16 sm:h-20 md:h-24 w-auto object-contain filter brightness-0 invert drop-shadow-[0_2px_10px_hsl(var(--foreground)/0.25)]" loading="lazy" decoding="async" />
               
             </div>
-            <p className="text-primary-foreground/80 leading-relaxed">
-              Especialistas em soluções auditivas premium. 
-              Reconectando você ao mundo dos sons com tecnologia 
-              de ponta e atendimento humanizado.
-            </p>
+            <p className="text-primary-foreground/80 leading-relaxed">Na Auditus, cada som tem um sentido, reconectamos você com o que realmente importa: suas histórias, seus laços, sua vida.</p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
                 <Facebook className="w-5 h-5" />
