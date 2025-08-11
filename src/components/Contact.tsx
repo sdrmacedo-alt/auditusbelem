@@ -2,11 +2,21 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MapPin, Phone, Mail, Clock, MessageCircle, Calendar, ArrowRight } from 'lucide-react';
+import { 
+  MapPin, 
+  Phone, 
+  Mail, 
+  Clock, 
+  MessageCircle,
+  Calendar,
+  ArrowRight
+} from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 import MapBrazilIllustration from '@/components/MapBrazilIllustration';
+
 const Contact = () => {
-  return <section id="contato" className="py-20 bg-background">
+  return (
+    <section id="contato" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
@@ -151,7 +161,28 @@ const Contact = () => {
             </div>
 
             {/* Quick Actions */}
-            
+            <Card className="card-premium">
+              <div className="space-y-4">
+                <h4 className="text-xl font-semibold text-primary">Ações Rápidas</h4>
+                <div className="space-y-3">
+                  <Button className="btn-premium w-full text-primary-foreground group">
+                    <MessageCircle className="mr-2 w-5 h-5" />
+                    WhatsApp
+                    <ArrowRight className="ml-auto w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                  <Button className="btn-premium-secondary w-full group">
+                    <Calendar className="mr-2 w-5 h-5" />
+                    Agendar Online
+                    <ArrowRight className="ml-auto w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                  <Button className="btn-premium-secondary w-full group">
+                    <Phone className="mr-2 w-5 h-5" />
+                    Ligar Agora
+                    <ArrowRight className="ml-auto w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </div>
+              </div>
+            </Card>
           </div>
 
           {/* Contact Form */}
@@ -171,13 +202,19 @@ const Contact = () => {
                       <label className="block text-sm font-semibold text-primary mb-2">
                         Nome Completo *
                       </label>
-                      <Input placeholder="Seu nome completo" className="w-full" />
+                      <Input 
+                        placeholder="Seu nome completo"
+                        className="w-full"
+                      />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-primary mb-2">
                         Telefone *
                       </label>
-                      <Input placeholder="(11) 99999-9999" className="w-full" />
+                      <Input 
+                        placeholder="(11) 99999-9999"
+                        className="w-full"
+                      />
                     </div>
                   </div>
 
@@ -186,13 +223,20 @@ const Contact = () => {
                       <label className="block text-sm font-semibold text-primary mb-2">
                         E-mail *
                       </label>
-                      <Input type="email" placeholder="seu@email.com" className="w-full" />
+                      <Input 
+                        type="email"
+                        placeholder="seu@email.com"
+                        className="w-full"
+                      />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-primary mb-2">
                         Assunto
                       </label>
-                      <Input placeholder="Como podemos ajudar?" className="w-full" />
+                      <Input 
+                        placeholder="Como podemos ajudar?"
+                        className="w-full"
+                      />
                     </div>
                   </div>
 
@@ -200,7 +244,10 @@ const Contact = () => {
                     <label className="block text-sm font-semibold text-primary mb-2">
                       Mensagem *
                     </label>
-                    <Textarea placeholder="Conte-nos sobre sua necessidade ou dúvida..." className="w-full min-h-[120px]" />
+                    <Textarea 
+                      placeholder="Conte-nos sobre sua necessidade ou dúvida..."
+                      className="w-full min-h-[120px]"
+                    />
                   </div>
 
                   <div className="bg-gradient-card rounded-xl p-4">
@@ -239,6 +286,8 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;
