@@ -13,9 +13,9 @@ const testimonials = [
     initials: 'SR'
   },
   {
-    name: 'Silvana', age: 58, city: 'São Luís',
+    name: 'Silvana Pereira', age: 58, city: 'São Luís',
     text: 'Foi mais do que um atendimento — foi um cuidado que mudou minha rotina. Recomendo a Auditus de olhos fechados.',
-    initials: 'S'
+    initials: 'SP'
   },
 ];
 
