@@ -24,43 +24,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold">Links Rápidos</h3>
-            <div className="space-y-3">
-              <a href="#home" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Início
-              </a>
-              <a href="#sobre" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Sobre Nós
-              </a>
-              <a href="#aparelhos" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Aparelhos Auditivos
-              </a>
-              <a href="#marcas" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Marcas Premium
-              </a>
-              <a href="#servicos" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Serviços
-              </a>
-              <a href="#contato" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Contato
-              </a>
-            </div>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold">Nossos Serviços</h3>
-            <div className="space-y-3">
-              <div className="text-primary-foreground/80">Avaliação Auditiva Gratuita</div>
-              <div className="text-primary-foreground/80">Adaptação de Aparelhos</div>
-              <div className="text-primary-foreground/80">Assistência Técnica</div>
-              <div className="text-primary-foreground/80">Atendimento no conforto do seu lar</div>
-              <div className="text-primary-foreground/80">Garantia Estendida</div>
-              <div className="text-primary-foreground/80">Programa de acompanhamento auditivo</div>
-            </div>
-          </div>
+         
 
           {/* Contact Info */}
           <div className="space-y-6">
