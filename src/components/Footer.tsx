@@ -3,7 +3,7 @@ import { SiWhatsapp } from 'react-icons/si';
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Logo and Description */}
           <div className="lg:col-span-1 space-y-4">
             <div className="flex items-center space-x-3">
@@ -21,44 +21,6 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold">Links Rápidos</h3>
-            <div className="space-y-3">
-              <a href="#home" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Início
-              </a>
-              <a href="#sobre" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Sobre Nós
-              </a>
-              <a href="#aparelhos" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Aparelhos Auditivos
-              </a>
-              <a href="#marcas" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Marcas Premium
-              </a>
-              <a href="#servicos" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Serviços
-              </a>
-              <a href="#contato" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Contato
-              </a>
-            </div>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold">Nossos Serviços</h3>
-            <div className="space-y-3">
-              <div className="text-primary-foreground/80">Avaliação Auditiva Gratuita</div>
-              <div className="text-primary-foreground/80">Adaptação de Aparelhos</div>
-              <div className="text-primary-foreground/80">Assistência Técnica</div>
-              <div className="text-primary-foreground/80">Atendimento no conforto do seu lar</div>
-              <div className="text-primary-foreground/80">Garantia Estendida</div>
-              <div className="text-primary-foreground/80">Programa de acompanhamento auditivo</div>
             </div>
           </div>
 
@@ -191,20 +153,9 @@ Sábado9h às 12h
 
         {/* Bottom Section */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-center">
             <div className="text-primary-foreground/60 text-sm">
               © 2024 AUDITUS Aparelhos Auditivos. Todos os direitos reservados.
-            </div>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                Política de Privacidade
-              </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                Termos de Uso
-              </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                LGPD
-              </a>
             </div>
           </div>
         </div>
