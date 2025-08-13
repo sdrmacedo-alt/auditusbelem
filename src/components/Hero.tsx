@@ -57,7 +57,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="text-center lg:text-left space-y-8 animate-fade-in bg-zinc-500">
+          <div className="text-center lg:text-left space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="heading-premium">
                 Muito além de aparelhos:{" "}
